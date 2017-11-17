@@ -1,0 +1,3261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Sweet and Meaty Game System</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style type="text/css">
+	<!--
+	.tab {margin-left: 40px;}
+	-->
+	</style>
+	<style type="text/css">
+	<!--
+	.half {margin-left: 20px;}
+	-->
+	</style>
+  </head>
+  <body>
+
+   <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Rules</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+	  <li class="dropdown">
+          <a href="#gettingstartegettingstartedd" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Getting Started<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#stats">Character Stats</a></li>
+                  <li><a href="#level">Character Creation</a></li>
+                  <li><a href="#dodge">Avoiding Attacks and Armor</a></li>
+                  <li><a href="#attack">Attack Roll</a></li>
+                  <li><a href="#damage">Damage</a></li>
+                  <li><a href="#specializations">Specializations</a></li>
+                  <li><a href="#saves">Saving Throws</a></li>
+                  <li><a href="#rounds">Rounds, Segments, and Ticks</a></li>
+                </ul>
+              </li>
+
+	  <li class="dropdown">
+          <a href="#magic" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Magic<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#ritualmagic">Ritual Magic</a></li>
+                  <li><a href="#voodoo">Voodoo</a></li>
+                  <li><a href="#freemagic">Free Magic</a></li>
+                </ul>
+              </li>
+	  <li class="dropdown">
+          <a href="#abilities" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Abilities<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#elementalmasteries">Elemental Masteries</a></li>
+                  <li><a href="#magicalabilities">Magical Abilities</a></li>
+                  <li><a href="#nonmagicalabilities">NonMagical Abilities</a></li>
+                </ul>
+              </li>
+	  <li class="dropdown">
+          <a href="#rituals" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rituals<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#rank1">Rank 1</a></li>
+                  <li><a href="#rank2">Rank 2</a></li>
+                  <li><a href="#rank3">Rank 3</a></li>
+                  <li><a href="#rank4">Rank 4</a></li>
+                  <li><a href="#rank5">Rank 5</a></li>
+                  <li><a href="#rank6">Rank 6</a></li>
+                  <li><a href="#rank7">Rank 7</a></li>
+                  <li><a href="#rank8">Rank 8</a></li>
+                  <li><a href="#rank9">Rank 9</a></li>
+                  <li><a href="#summons">Summons</a></li>
+                </ul>
+              </li>
+            <li><a href="#skills">Skills</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="page-header"><br>
+        <h2>The Tick and Epsilon Role Playing System</h2>
+      </div>
+	<h4 id="stats">Character Stats</h4>
+	<p>
+		There are three character stats in this system: strength, dexterity, and intelligence.  At initial character creation, you have 40 points to distribute amongst your stats. During the initial distribution, the maximum amount of points you can put into any given stat is 18.  Later on, other bonuses may be used to increase or decrease your stats further, there is no hard cap after initial character creation.  The stat itself will have relatively little meaning; however, the stat will translate to a modifier (positive or negative).  Almost every roll you make will be effected by at least one stat modifier.    
+	</p>
+	<p>
+		Stat Bonus Formula: (Stat_Value-10)/2
+	</p>
+	<p>
+		For example, a character with the stats of Strength: 10, Dexterity: 18, and Intelligence: 18 will have a stength modifier of 0 and dexterity and intelligence bonuses of +4.  The modifiers can also be negative, for instance, an intelligence of 6 has a modifier of -2.
+	</p>
+	<h4 id="level">Character Creation</h4>
+	<p>
+		At first level a character has 35 points (plus any bonus points from flaws) to build his character. Every level after that he gets 15 more (35 at first, 50 at second, 65 at third, etc.) A character also has 5 + his level ticks to use each round in combat and he starts with 20(called the kicker) + 4 + str mod hp. Every level after he gains 4 + str mod hp. In addition to ticks, points and hp a character also recieves 1 + int mod skill points every level (min 1).<br/>
+		Building a character is simple, spend your points to buy abilities. Any points not used are saved and can be used at the next level up.
+	</p>
+	<h4 id="dodge">Avoiding Attacks and Armor</h4>
+	<p>
+		Attacks are avoided by either a dodge roll or a shield block roll.  Failing that, armor serves to reduce the damage you receive when hit.  For example, plate mail provides 8 damage reduction against physical attacks. Armor is broken down into four broad categories.  This simplifies their stats.
+	</p>
+        <div class="col-md-6">
+        	<table class="table table-striped">
+            		<thead>
+              			<tr>
+					<th>Armor Type</th>
+					<th>Example</th>
+					<th>Damage Reduction Bonus</th>
+					<th>Dexterity Modifier Adjustment</th>
+					<th>Movement Modifier</th>
+              			</tr>
+            		</thead>
+            	<tbody>
+			<tr>
+				<td>Heavy</td>
+				<td>Full Plate Mail</td>
+				<td>8</td>
+				<td>-3</td>
+				<td>-10</td>
+			</tr>
+			<tr>
+				<td>Medium-Heavy</td>
+				<td>Breast Plate</td>
+				<td>6</td>
+				<td>-2</td>
+				<td>-10</td>
+			</tr>
+			<tr>
+				<td>Light-Medium</td>
+				<td>Chain Mail</td>
+				<td>4</td>
+				<td>-1</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>Light</td>
+				<td>Leather Armor</td>
+				<td>2</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+            	</tbody>
+          </table>
+        </div>
+	<h5>Dodge</h5>
+	<p>
+		A character’s total dodge bonus is equal to the sum of the characters  dodge bonus, dexterity bonus, armor penalty (these will be negative), and miscellaneous modifiers from abilities. To dodge, the defending characters rolls a d20 and adds the total dodge bonus to the roll. If this value exceeds the the offensive character’s attack roll then the attacking character misses.
+	</p>
+	<h5>Shield Block</h5>
+	<p>
+		A character’s total shield block bonus is equal to the sum of the character’s shield roll bonus, strength bonus, and miscellaneous modifiers from the shield. In order to block an attack with your shield your character rolls a d20 and adds the total shield block bonus to the roll. If this value exceeds the offensive character’s attack roll then the attacking character misses. A shield block may only be attempted if the attacking character is within ±90 ◦ of the front of the defending character.
+	</p>
+	<h5>Flank Attacks</h5>
+	<p>
+		If the defending character is being flanked by the attacking character then the attacking character automatically hits if the defending character lacks uncanny dodge. If the defending character has uncanny dodge, he rolls a dodge or shield block normally though the attacking character gets a +2 to hit.
+	</p>
+	<p>
+		A character is considered to be flanked by an attacker in any of the following scenarios: his back or side is to the attacker, he is unaware of his assailant, or if the character is engaged with a different attacker and either does not turn to face the new attacker or is unable to do so.
+	</p>
+	<h4 id="attack">Attack Roll</h4>
+	<p>
+		Attack roll bonus is calculated as Attack Roll Bonus = Base Attack Bonus + Average(Strength and Dex modifiers) + Miscellaneous modifiers (enchanted weapons, flank, etc)
+	</p>
+	<p> When using a ranged weapon, strength does not factor into the attack roll bonus.  Instead of taking the average of your strength and dexterity modifiers, just use your dexterity modifier. </p>
+	<p> When using a weapon with two-hands, use half the strength modifier (rounded down) when calculating your attack roll bonus.  In exchange for the reduced accuracy, you double your strength modifier to damage. </p>
+
+        <div class="col-sm-6">
+        	<table class="table table-striped">
+            		<thead>
+              			<tr>
+					<th>Example</th>
+              			</tr>
+            		</thead>
+            	<tbody>
+			<tr>
+				<td>Str: 18 +4</td>
+			</tr>
+			<tr>
+				<td>Dex: 14 +2</td>
+			</tr>
+			<tr>
+				<td>Base Attack: +4</td>
+			</tr>
+			<tr>
+				<td>Masterwork Weapon (one-handed)</td>
+			</tr>
+			<tr>
+				<td>+4 + (4+2)/2 +1 = +8</td>
+			</tr>
+            	</tbody>
+          </table>
+        </div>
+
+        <div class="col-sm-6">
+        	<table class="table table-striped">
+            		<thead>
+              			<tr>
+					<th>Example</th>
+              			</tr>
+            		</thead>
+            	<tbody>
+			<tr>
+				<td>Str: 20 +5</td>
+			</tr>
+			<tr>
+				<td>Dex: 14 +2</td>
+			</tr>
+			<tr>
+				<td>Base Attack: +4</td>
+			</tr>
+			<tr>
+				<td>Masterwork Weapon (one-handed)</td>
+			</tr>
+			<tr>
+				<td>+4 + (5+2)/2 +1 = +8.5 => +8</td>
+			</tr>
+            	</tbody>
+          </table>
+        </div>
+        <div class="col-sm-6">
+        	<table class="table table-striped">
+            		<thead>
+              			<tr>
+					<th>Example</th>
+              			</tr>
+            		</thead>
+            	<tbody>
+			<tr>
+				<td>Str: 18 +4</td>
+			</tr>
+			<tr>
+				<td>Dex: 14 +2</td>
+			</tr>
+			<tr>
+				<td>Base Attack: +4</td>
+			</tr>
+			<tr>
+				<td>Masterwork Weapon (two-handed)</td>
+			</tr>
+			<tr>
+				<td>+4 + (4/2+2)/2 +1 = +7</td>
+			</tr>
+            	</tbody>
+          </table>
+        </div>
+        <div class="col-sm-6">
+        	<table class="table table-striped">
+            		<thead>
+              			<tr>
+					<th>Example</th>
+              			</tr>
+            		</thead>
+            	<tbody>
+			<tr>
+				<td>Str: 18 +4</td>
+			</tr>
+			<tr>
+				<td>Dex: 14 +2</td>
+			</tr>
+			<tr>
+				<td>Base Attack: +4</td>
+			</tr>
+			<tr>
+				<td>Masterwork Weapon (ranged)</td>
+			</tr>
+			<tr>
+				<td>+4 +2 +1 = +7</td>
+			</tr>
+            	</tbody>
+          </table>
+        </div>
+
+
+	<h4 id="damage">Damage</h4>
+	<p>One-handed damage = weapon damage dice + strength bonus + miscellaneous (weapon enchantments, flank attacks, etc)</p>
+	<p>Two-handed damage = weapon damage dice + 2*strength bonus + miscellaneous (weapon enchantments, flank attacks, etc)</p>
+	<p>Thrown-damage = weapon damage dice + strength bonus + miscellaneous (weapon enchantments, flank attacks, etc)</p>
+	<p>Bow-damage = weapon damage dice + (if composite bow) strength bonus + lethal shot + miscellaneous (weapon enchantments, flank attacks, etc)</p>
+
+	
+	<h4 id="specializations">Specializations</h4>
+
+	<p>At level 1, a character chooses a specialization: strength, speed, or intelligence.</p>
+        <div class="col-sm-12">
+        	<table class="table table-striped">
+            		<thead>
+              			<tr>
+					<th>Specialization</th>
+					<th>Description</th>
+              			</tr>
+            		</thead>
+            	<tbody>
+			<tr>
+				<td>Strength</td>
+				<td>A character with the strength specialization can now perform a feat of strength once per day. This lets him double his strength modifier for one action. The character also gains an additional 3 damage reduction.</td>
+			</tr>
+			<tr>
+				<td>Dexterity</td>
+				<td>A character with the dexterity specialization receives +3 on initiative rolls and +2 to reflex save. Further, the character gains +10 movement.</td>
+			</tr>
+			<tr>
+				<td>Intelligence</td>
+				<td>A character with the intelligence specialization receives +2 save versus spells, and an additional 5 points to build his character with.
+</td>
+			</tr>
+            	</tbody>
+          </table>
+        </div>
+
+	<h4 id="saves">Saving Throws</h4>
+	<h5>Poison</h5>
+	<p>Poison saves are handled by making a strength check (1d20+strength modifier).  The difficulty of the strength check is up to the DM, but in general a weak poison would have a difficulty of roughly between 8 and 10.  A difficulty of 17+ would constitute an extremely strong poison.</p>
+	<h5>Reflex</h5>
+	<p>Reflex saves are handled by reflex rolls. For instance, a reflex roll is made if someone uses matter magic to attempt to drop a large rock on  someone. however, a character can never dodge, for example, a fire blast. A save vs. spell must be made here. A reflex roll is calculated as 1d20+reflex bonus+dexterity modifier+miscellaneous modifiers(bonuses from items, masteries, specializations, etc).</p>
+	<h5>Save vs. Spell</h5>
+	<p>The only true saving throw now is Save vs. Spell. Any magic targeting a character warrants that character having an opportunity to resist the spell. This is simply done with a Save vs. Spell. The difficulty checks of these spells will be covered under the section on Magic Rules. </p>
+	<p>A character’s saves are calculated as (⅛*willpower) (rounded down) + purchased saves + intelligence modifier + miscellaneous modifiers (from items, masteries, etc).</p>
+	<h4 id="rounds">Rounds, Segments, and Ticks</h4>
+	<p>Perhaps the most radical shift from a conventional game of D&D are the changes to the flow of combat itself. The first thing to note is that rounds are no longer 6 second self contained intervals where each participant gets one action. The old rules, for the most part, restricted opponents to standing in place and trading blows. We now view the round as a container. Think of it as segments occur during rounds and ticks occur during segments.</p>
+	<p>To clarify further, when a character’s initiative is actually called, this is referred to as that character’s segment. Ticks are the bread and butter of the new system. Every round a character has 5 + level ticks to use. Every action a character takes requires a certain amount of ticks. Finally, unused ticks do not roll over from round to round. They simply disappear as a lost opportunity. </p>
+	<p>A character may act outside of his segment.  This is the epsilon part of the tick and epsilon system.  Many combat moves/abilities/spells will have an associated epsilon value.  An ability with an epsilon value can be used up to the epsilon value segments prior to your segment.  It may also be used anytime after your segment. This is assuming you have the ticks that is.  Further, these abilities may be used "in response" to an action.  A move used in response to another cannot be responded to by the person who's ability is being reacted to.  We don't want to have to put moves on a stack and resolve them one by one.</p>
+	<p>To illustrate, Bob uses the frenzy charge ability to attack Frank.  Frank's initiative is only 2 after Bob.  Frank also has the improved trip ability.  This ability has an epsilon value of 5.  Since Frank still has all of his ticks for the round, he can chose to spend 3 of his ticks to attempt to trip Bob before his frenzy charge lands.  If he successfully trips Bob, Bob would suffer the effects of the trip.  In this case, knocking Bob down would interrupt his frenzy charge and cause him to lose the 8 ticks he spent on it.  If Frank's trip attempt fails, Bob's frenzy charge will complete normally. </p>
+	<h3>Magic Systems<h3>
+	<h4 id="ritualmagic">Ritual Magic</h4>
+	<p>The current magic system available to PCs.  This system is much more similar to a traditional D&D magic system.  It requires the caster to learn the spells before hand etc.  This magic system, however, instead of focusing quick chants and spells cast in seconds is instead a more traditionally occult system.</p>
+	<p>The spells generally take at least 10 minutes to cast and are heavily focused on summoning and binding.  There exists a list of currently created rituals and their rules; however, the player is still encouraged to try making their own. </p>
+	<h5>Will Power</h5>
+	<p>Will power is a calculated stat used to determine how strong or effective a particular ritual is.  It’s calculated as follows:
+WillPower = Level + Intelligence Modifier + Purchased Will Power + External Modifiers.  
+(External Modifiers may come from magic items, other rituals, assisting wizards, etc.  Consult DM for specifics if unsure in a given situation)</p>
+	<p>Will power may be purchased at the cost of 5 level up points apiece for the first 20 purchases.  Subsequent points cost 7 each.  There is no cap on how many can be purchased (aside from your available points to spend of course).</p> 
+	<p>Will power comes with a few perks you can activate as your rank goes up.</p>
+        <div class="col-sm-12">
+        	<table class="table table-striped">
+            		<thead>
+              			<tr>
+					<th>Will Power</th>
+					<th>Power</th>
+					<th>Description</th>
+              			</tr>
+            		</thead>
+            	<tbody>
+			<tr>
+				<td>10</td>
+				<td>Menacing Aura</td>
+				<td>The player may project a menacing aura at will.  Lower leveled characters in the player's presence will feel threatened.</td>
+			</tr>
+			<tr>
+				<td>20</td>
+				<td>Commanding Voice</td>
+				<td>The player may project his willpower in the form of a command.  An unleveled character would have trouble resisting such a command.</td>
+			</tr>
+			<tr>
+				<td>40</td>
+				<td>Immune to Fear</td>
+				<td>The character's will is such that he is now immune to fear.</td>
+			</tr>
+			<tr>
+				<td>50</td>
+				<td>Charming Voice</td>
+				<td>The character's will power is now such that he no longer needs to bludgeon lesser minds into submission.  An unleveled character is charmed just to be in his presence.</td>
+			</tr>
+            	</tbody>
+          </table>
+	</div>
+	<p> Will power has an associated rank.  The rank is the highest level of ritual you can cast with your current will power.<br/>The saving throw for rituals is 0.5*caster willpower + ritual rank.</p>
+	<div class="col-sm-12">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Rank</th>
+					<th>Will Power</th>
+					<th>Minimum intelligence Required</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>11</td>
+				</tr>
+				
+				<tr>
+					<td>2</td>
+					<td>8</td>
+					<td>12</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>14</td>
+					<td>13</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>20</td>
+					<td>14</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>26</td>
+					<td>15</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>32</td>
+					<td>16</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>38</td>
+					<td>17</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>44</td>
+					<td>18</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>50</td>
+					<td>19</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>56</td>
+					<td>20</td>
+				</tr>
+
+            	</tbody>
+          </table>
+	</div>
+	<h5>Learning New Rituals</h5>
+	<p>Your character may acquire new rituals in three ways.  The first is the natural progression of your character.  This is given in the following chart.  Second, provided you are of sufficient rank, you may learn a ritual from another ritualist.  Finally, you may spend points at level up for additional rituals.  It costs 1 point to learn any two rituals of Rank I-V.  It costs 1 point for a single ritual of Rank VI-X.</p>
+	<div class="col-sm-12">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Will Power Rank</th>
+					<th>1</th>
+					<th>2</th>
+					<th>3</th>
+					<th>4</th>
+					<th>5</th>
+					<th>6</th>
+					<th>7</th>
+					<th>8</th>
+					<th>9</th>
+					<th>10</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>2</td>
+					<td>1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>4</td>
+					<td>3</td>
+					<td>2</td>
+					<td>1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>5</td>
+					<td>4</td>
+					<td>3</td>
+					<td>2</td>
+					<td>1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>6</td>
+					<td>5</td>
+					<td>4</td>
+					<td>3</td>
+					<td>2</td>
+					<td>1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>7</td>
+					<td>6</td>
+					<td>5</td>
+					<td>4</td>
+					<td>3</td>
+					<td>2</td>
+					<td>1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>8</td>
+					<td>7</td>
+					<td>6</td>
+					<td>5</td>
+					<td>4</td>
+					<td>3</td>
+					<td>2</td>
+					<td>1</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>9</td>
+					<td>8</td>
+					<td>7</td>
+					<td>6</td>
+					<td>5</td>
+					<td>4</td>
+					<td>3</td>
+					<td>2</td>
+					<td>1</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>10</td>
+					<td>9</td>
+					<td>8</td>
+					<td>7</td>
+					<td>6</td>
+					<td>5</td>
+					<td>4</td>
+					<td>3</td>
+					<td>2</td>
+					<td>1</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+	</div>
+	<h4 id="voodoo">Voodoo</h4>
+		<p>
+			Voodoo is an ability that can be purchased that is powered by willpower. It costs 10 points. Voodoo allows the caster to "bind" two objects together using one of the following three bindings:
+		</p>
+		<p class="half">
+			Transfer Properties<br/>
+				Each transfer properties binding creates a one-directional link that copies one property of one object to another. For example, one may bind a piece of chalk to a piece of metal using a transfer propery binding and give the metal the brittleness of the chalk.
+		</p>
+		<p class="half">
+			Stability<br/>
+			A stability binding is a two-way binding. Moving one object moves the other and resistance to one also applies to another. You cannot move one object without the other object also moving. For example, you might bind a fighter's breast plate to a boulder. Preventing him from moving if the boulder is suffciently heavy. A sufficiently skilled user of voodoo might bind the actual person tot he rock.
+		</p>
+		<p class="half">
+			Unto one as the other<br/>
+			A link of this type is bidirectional. Quite literally anything that one object undergoes the other does as well. For Example, if two people are bound in this fasion, if one dies so does the other. If one sustains hp damage so does the other. Same for healing, regeneration, burns, pain, etc.
+		</p>
+		<p>
+			Voodoo has 4 ranks, each requiring a minimum will power. At each rank you can perform more difficult bindings.<br/>
+			Rank 1 requires willpower rank 3 and you can connect "Like" non living things<br/>
+			Rank 2 requires willpower rank 4 and you can connect "Non Like" non living things<br/>
+			Rank 3 requires willpower rank 5 and you can connect "Like" living things<br/>
+			Rank 4 requires willpower rank 6 and you can connect "non like" living things
+		</p>
+		<p>
+			 Some other notes about voodoo:<br/>
+			A user of voodoo may maintain 1 binding per will power.<br/>
+			Casting a voodoo binding costs the caster hp equal to the willpower rank required to cast the binding.<br/>
+			The tick cost for laying a voodoo binding is equal to the required willpower rank of the binding.<br/>
+			The saving throw to resist voodoo is equal to 0.5*caster willpower + required willpower rank.
+	<h4 id="freemagic">Free Magic</h4>
+		<p>
+			Traditional D&D magic systems, with their well defined spell system, quickly stagnates a wizard's gameplay. What follows is a free form spell casting system such that no two spells need be the same. The idea is that the system provides boundaries and guidelines for what is capable while the wizard, himself, must provide the details.
+		</p>
+		<p><b>NOTE:</b>Currently, free magiic can only be use by Angel/Demon summons from withing the ritual magic system. We may reopen purchasing free magic to PC's at a later time. These rules are still useful as the PC may easily have dominated an Angel/Demon.
+		</p>
+        <div class="col-md-4">
+        	<table class="table table-striped">
+            		<thead>
+              			<tr>
+					<th>Target</th>
+					<th>Rank</th>
+              			</tr>
+            		</thead>
+            		<tbody>
+				<tr>
+					<td>Self</td>
+					<td>Rank 1</td>
+				</tr>
+				<tr>
+					<td>External, single target, and non-sentient</td>
+					<td>Rank 2</td>
+				</tr>
+				<tr>
+					<td>External, single target, and sentient</td>
+					<td>Rank 3</td>
+				</tr>
+				<tr>
+					<td>External, multiple targets, and non-sentient</td>
+					<td>Rank 4</td>
+				</tr>
+				<tr>
+					<td>Externa;, multiple targets, and sentient</td>
+					<td>Rank 5</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+		<p class="half">
+			Rank<br/>
+			For each spell school there exists 5 levels of profinciency. We call them ranks. There are attained by placing, at level up, additional points in nkowledge of a spell sphere. The breakdown is rank 1 at knowledge 1, rank 2 at knowledge 2, rank 3 at knowledge 6, rank 4 at knowledge 12 and rank 5 at knowledge 18.
+		</p>
+		<p class="half">
+			Calculating rank is not difficult, though sometimes, a judgement call by the DM is required. To calculate the rank of a spell one needs to consider two things: the target and the complexity of the effect. Each of these will have a rank associated with them. The final rank of the spell is simple the higher of the two. <br/>
+			Target is the easier of the two to calculate as it has no subjective qualities. The rank based on the target is described in the chart below:
+		</p>	
+		<p class="half">
+			Next is the complexity. This one tends to be a little fuzzier. It runs roughly as follows:<br/>
+			Complexity 1 is for wild, uncontrolled bursts of magic, for instance a burst of shielding force with no duration, a fireball, crumbling a wall. There are all effects of complexity 1.<br/>
+			Complexity 2 runs from effects with any kind of structure at all such as mold-ing a chair out of stone (using matter) to as complex as basic telekinesis(arcane). Some examples include: solidfying the air around you to act as a barrier to sound (elemental), summoning a box of stone around a target (matter), and breaking down the "magical glue" binding something together(void).<br/>
+			Complexity 3 runs from conjuring clockwork machinery(matter) to modifying the structure of living things(life). Further examples include: healing(life), increasing your strength(life), keening a weapon(matter), adding a "plus" to a weapon/armor(matter), reading someone's thoughts(mind), projecting your mind from your body(mind), using the water in the air to bend light around(elemental), "subtracting" bits from existing magic(void), extending an existing spell from another willing wizard(arcane), laying down a magical "trigger"(arcane).<br/>
+			Complexity 4 runs on the order of manipulating raw magical energy(arcane) to completely polymorphing a living creature(life). Further examples include: forcibly ripping mana out of a another target(arcane), reworking the structure of a material to make it better able to hold larger enchantments(matter), regenerate a lost limb(life), create a sentience with limited awareness/computational powers(mind), cutting off a person's access to magic(void).<br/>
+			Complexity 5 magic allows spells of boundless complexity. The only limits at rank 5 are the casters creativity and his draw.
+		</p>
+		<p class="half">
+			Mana<br/>
+			A character's total mana is equal to (3 + int_mod)* level. A character's mana may be further modified by special abilities. The mana cost of a spell is affected by just a small number of things. The procedure is as follows:<br/>
+			Calculate the rank of the spell, that is the base cost (rank 3 spells start at mana cost 3).<br/>
+			Next decide on duration. The longer the duration the more it will cost. It duration increase increases the cost by 1. They are all 1 something/level. The order is round, minute, hour, day, week, month, year, permanent. So if you want to make something last for 1 hour per level that will cost 3 extra mana fir duration while to make something permanent it costs 8.<br/>
+			Many spells will require additional mana to fuel them. Generally speaking, every point of mana spent in this regard will give you one iteration of the effect. For instance consider conjuring a burst of fire with no duration. The rank is 2 because it is  rank 1 for an uncontrolled burst but rank 2 for an external, non-sentiant, and single target so the final rank is 2. Now the damage for this burst of fire depends on how much mana you pump into the effect. For each additional point of mana it increases it by 2d6. So spending 6 mana (2 for rank and 4 more for damage) you will get an 8d6 fire burst. Any effect with a "pumpable effect works in s similar fashion. Here a few more examples to drive the point home: Using life 3 to increase strength cast 3 + duration + 1 mana per strength. Using life to increase movement is the same except it is 1 mana per 10 ft of movement speed increase. The exact increment of each point is something that is determined by the DM (for balance). However, many of these effects have become quite ubiquitous over time and a kind of standardiztion has arose.<br/>
+			Finially, you must consider area of effect. Now if the spell is local to a single target ther is no cost. Further, if the spell is targeting multiple individuals targets then you add 1 to the casting for each target beyond the first. The other aspect of area effect spells is for a spell that doesn't contain specific targets but actually affects a spherical area. This adds 1 to the mana cost for each 5 ft. of the radius of the ball you want to affect. For example, If you wanted to snap a sword in half using matter, you would calculate it in the following fashion. First, we have a single non-sentient target and the spell effect is crude, it indicates a rank 2 for targeting and a rank 2 for complexity so it is rank 2. The spell has no duration and no area because it is just one specific target so the final cost is 2. Now say you wanted to break 5 swords with the same spell. The calculation is different. Complexity is still the same but it is multiple non-sentient targets so targeting is 4 so the rank and base cost is 4. Still no duration but you pay 1 additional mana for each sword beyond the first so 4 more. Therefore the final cost is 8, which is cheaper than if you wanted to cast the lower rank version 5 times. Do note that is not always true. Take the 2 swords example, it would cast 4 to cast it twice but 5 to cast it once. Just because you can doesn't always mean you should.<br/>
+			The other aspect of targeting is area cost in the sphereical method. So, if instead of targeting individual objects such as swords, we wante to instead conjure a huge ball of fire. So there are 5 enemies on the field. Let's pretend first that they are clustered together so they all fit in a 10 ft. sphere. Then we can hit them with a single fireball by increasing the radius by 2 points since each point increases the radius by 5ft. With no points in radius you can still effect a small area (enough to hit one target). The other method would be to summon 5 individual bursts of fire, one for each target. That would require 4 mana for targeting and increase the rank to 4(the reason it is 4 and not 5 is subtle).
+		</p>
+		<p class="half">
+			Advanced technique: Mixing Spheres<br/>
+			Some effects are best accomplished by mixing spheres. Basically, the rank of a mixed spell is the max of the complexity/target rank or each sphere plus 1 per each sphere above the first. For example:<br/>
+			Consider setting an alarm. We want a very loud boom of noise to occur anytime magic goes off withing 15' of yourself. So, detect magic is a complexity 1 arcane effect and 1 for targeting since you are targeting yourslef. Creating noise using wind would be elemental 2 for targeting and 1 for complexity. We are mixing 2 spheres so the rank is 2 for the max of the effects plus 1 for mixing so the final rank is 3. Now to calculate mana cost we need to decide on duration (lets assume day/level is enough) and area for the detect effect (15 ft. should be good) so the casting cost would be 3(rank) + 5(duration) and 3(area) = 11.
+	<h3>Abilities</h3>
+	<h4 id="elementalmasteries">Elemental Masteries</h4>
+	<p>The elemental mastery abilities cost 10 points each. When taken, each rank has a list of abilities of which you can choose 3. Also, each rank purchased, you must choose an element that you can no longer use rituals from nor purchase masteries in. Selecting an elemental mastery is a commitment to the nature of the element. The more masteries the deeper the commitment.</p>
+	<h4>Air</h4>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Air I</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Air Spells</td>
+					</tr>
+					<tr>
+						<td>Immune Electricity</td>
+					</tr>
+					<tr>
+						<td>+2 Dodge vs. Missle Attacks</td>
+					</tr>
+					<tr>
+						<td>+10 Movement</td>
+					</tr>
+					<tr>
+						<td>+10 ft. Jump Height</td>
+					</tr>
+					<tr>
+						<td>Create Sound at will. Cannot perfectly mimic voices, but otherwise can generate any sound within reason. Volume is limited to a range from whisper up to thunder crack. Save vs. spell at DC 18 to recognize the sound is magically created. 5 ticks.</td>
+					</tr>
+					<tr>
+						<td>+2 attack for air based summons</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Air II</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Air Spells</td>
+					</tr>
+					<tr>
+						<td>5d6 Lightning Bolt for 8 ticks. DC 17 for half damage. Trikes in a straight line 5 ft. wide and 100 ft. long. Stops if it hits a solid wall or something similar. Living things do not stop the lightning. </td>
+					</tr>
+					<tr>
+						<td>Solidify a 5 ft. radius of air once per day for 1 round/level</td>
+					</tr>
+					<tr>
+						<td>Slow Fall for 1 round per level 3 times per day, 5 ticks, 1 &epsilon;</td>
+					</tr>
+					<tr>
+						<td>Levitate 1 round per level per day (not necessarily contiguously), 5 ticks, 5 ticks to move 20 ft. up or down.</td>
+					</tr>
+					<tr>
+						<td>Gambler's Luck once per day. (Reroll one die roll after result)</td>
+					</tr>
+					<tr>
+						<td>+10 hp for air based summons</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Air III</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Air Spells</td>
+					</tr>
+					<tr>
+						<td>40 mph Gust of Wind at will, &epsilon; 1, 3 ticks.</td>
+					</tr>
+					<tr>
+						<td>Mimic Voice</td>
+					</tr>
+					<tr>
+						<td>+2 dodge</td>
+					</tr>
+					<tr>
+						<td>Permanently Grow Wings large enough to gain flight at 30 movement.</td>
+					</tr>
+					<tr>
+						<td>+2 damage for air based summons</td>
+					</tr>
+					<tr>
+						<td>Airwalk 1 round per level per day (not necessarily contiguously)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Air IV</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Air Spells</td>
+					</tr>
+					<tr>
+						<td>Bind Someone in bands of air 3 times per day. Reflex save DC 18</td>
+					</tr>
+					<tr>
+						<td>+4 Willpower towards summoning "Named" Elementals</td>
+					</tr>
+					<tr>
+						<td>Flight double movement speed 1 round per level per day (not necessarily contiguously)</td>
+					</tr>
+					<tr>
+						<td>+20 Movement for air based summons</td>
+					</tr>
+					<tr>
+						<td>10d6 Chain Lighting at will. 8 ticks. DC 18 for half damage. Strikes up to 10 targets. Each target takes 1d6 less. Targets man not be repeated in a single casting. Each arc must be in a straight line from the last one and cannot be more than 50 ft. distance. Solid walls stop the spell as per normal lightning bolt.</td>
+					</tr>
+					<tr>
+						<td>Solidify air in a 10 ft. hollow cube once per day. Reflex save at DC 18 to dodge.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	<h4>Earth</h4>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Earth I</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Earth Spells</td>
+					</tr>
+					<tr>
+						<td>Permanent detect life 5 ft. radius</td>
+					</tr>
+					<tr>
+						<td>+2 DR</td>
+					</tr>
+					<tr>
+						<td>+20 HP</td>
+					</tr>
+					<tr>
+						<td>+25% Resistance to all elemental damage</td>
+					</tr>
+					<tr>
+						<td>See Life</td>
+					</tr>
+					<tr>
+						<td>+1 Regeneration</td>
+					</tr>
+					<tr>
+						<td>+2 attack for earth based summons</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Earth II</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Earth Spells</td>
+					</tr>
+					<tr>
+						<td>+1 Regeneration</td>
+					</tr>
+					<tr>
+						<td>Web at will. 7 ticks. Reflex save at DC 16. Covers 10x10 area with strong sticky spider web. Entraps those who fail a reflex save. Once trapped, a strength check at 16 or an escape artist of 9 is required to break free. The web can be burned and will burn away in 1 round if lit by a fire at least the size of a torch. Those trapped would take 2d6 fire damage.</td>
+					</tr>
+					<tr>
+						<td>Keen (double crit range) a weapon for 1 day, once per day.</td>
+					</tr>
+					<tr>
+						<td>Can fight to negative strength before going down.</td>
+					</tr>
+					<tr>
+						<td>Strength of the Earth (+2 Strenght)</td>
+					</tr>
+					<tr>
+						<td>+20 HP for earth based summons.</td>
+					</tr>
+					<tr>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Earth III</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Earth Spells</td>
+					</tr>
+					<tr>
+						<td>Move 10 cubic feet of earth per round at will.</td>
+					</tr>
+					<tr>
+						<td>Tremor Sense 50 ft. radius. (i.e. people walking, elementals burrowing, ect.)</td>
+					</tr>
+					<tr>
+						<td>+2 damage for earth based summons</td>
+					</tr>
+					<tr>
+						<td>Rock to mud once per day. 5 ticks. Can turn a 10x10x2 foot area of rock into thick sludgy mud.</td>
+					</tr>
+					<tr>
+						<td>+4 DR</td>
+					</tr>
+					<tr>
+						<td>+25% Resistance to all elemental damage.</td>
+					</tr>
+					<tr>
+						<td>Meld into Earth at will. Allows the user to sink into ot otherwise enter (but not pass through to the other side) any rock, dirt ect. large enough to hold him. He may survive in the rock with no negative effects from lack of oxygen for as long as he likes. He would still need to leave eventually to eat or drink.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Earth IV</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Earth Spells</td>
+					</tr>
+					<tr>
+						<td>+4 Willpower for summoning named earth summons</td>
+					</tr>
+					<tr>
+						<td>+8 DR for earth based summons</td>
+					</tr>
+					<tr>
+						<td>Wall of Stone 3 times per day. Summons a permanent stone wall up to 50 feet long and 20 feet high and 5 feet thick. The wall must be anchored at each end and on the ground.</td>
+					</tr>
+					<tr>
+						<td>Passwall 3 times per day. Each casting of passwall allows the caster to pass through up to 10 feet of stone/wood/ect. wall at a time.</td>
+					</tr>
+					<tr>
+						<td>Wall of Thorns once per day. Summons a briar bush of tremendous size. It is rectangular and has a maximum size of 20 feet wide by 20 feet long per level. The hieght is the bush can be up to 8 feet high. Movement through the bush causes 1d6 bristle damage per 10 ft. moved.</td>
+					</tr>
+					<tr>
+						<td>Plants grow to full matruity on touch at will.</td>
+					</tr>
+					<tr>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	<h4>Fire</h4>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Fire I</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Fire Spells</td>
+					</tr>
+					<tr>
+						<td>Immune Fire</td>
+					</tr>
+					<tr>
+						<td>Pyrotechnics/Affect Normal Fires at will, 5 ticks. Can create up to a torch sized flame and snuff a fire as large as a camp fire. With an existing fire of at least the size of a largish camp fire, you can cause it to burst into a blinding shower of sparks and smoke. Save at DC 15 or be blinded for 1-2 rounds.</td>
+					</tr>
+					<tr>
+						<td>+2 attack for fire based summons</td>
+					</tr>
+					<tr>
+						<td>Infravision, can see the warmth of living creatures.</td>
+					</tr>
+					<tr>
+						<td>Produce Smoke 10 cubic feet, at will, 5 ticks.</td>
+					</tr>
+					<tr>
+						<td>+2 Dex</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Fire II</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Fire Spells</td>
+					</tr>
+					<tr>
+						<td>+2 Attack bonus</td>
+					</tr>
+					<tr>
+						<td>+5 HP for fire based summons</td>
+					</tr>
+					<tr>
+						<td>Heat Metal once per day, 7 ticks, save vs spell DC 16. Target piece of metal becomes incredibly hot for 1 round per level.</td>
+					</tr>
+					<tr>
+						<td>Burning Hands 5d6 10 ft. cone 8 ticks at will.</td>
+					</tr>
+					<tr>
+						<td>Silent Image 3 times per day, 7 ticks. Save vs. spell DC 16. Created illusionary image no larger than a 10x10 ft. cube. The image cannot move nor make noise. If interacted with or on a attempt to disbelieve, there is a save to realize it's an illusion.</td>
+					</tr>
+					<tr>
+						<td>Blur (25% dodge, 6 ticks, 1 round per level, twice per day)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Fire III</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Fire Spells</td>
+					</tr>
+					<tr>
+						<td>+1d6 to damage for fire based summons</td>
+					</tr>
+					<tr>
+						<td>2d6 damage fireshield, 5 ticks, 1 round per level at will.</td>
+					</tr>
+					<tr>
+						<td>Add flaming burst to a weapon for the day. (2d6 fire damage)</td>
+					</tr>
+					<tr>
+						<td>Blind 3 times per day, 6 ticks, DC 17, lasts 1 round per level.</td>
+					</tr>
+					<tr>
+						<td>8d6 fireball 20 ft. radius at will, 8 ticks, 100 ft. distance DC 17 for half damage.</td>
+					</tr>
+					<tr>
+						<td>Rage (+4 Strength, 5 ticks to activate, 1 round per level)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Fire IV</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Fire spells</td>
+					</tr>
+					<tr>
+						<td>Wall of Fire, 3 times per day (vertical only). Level * 10 ft. wide max and level * 5 ft. high max. 2d6+level fire damage to pass through. 1d6 damage per round to be within 5 feet of the wall.</td>
+					</tr>
+					<tr>
+						<td>+2d6 fire shield for fire based summons</td>
+					</tr>
+					<tr>
+						<td>+4 Willpower for summoning Named fire summons</td>
+					</tr>
+					<tr>
+						<td>Retaliatory Strike, body explodes for 75 damage in a 50 ft radius on death</td>
+					</tr>
+					<tr>
+						<td>Chaos once per day, 8 ticks, save DC 18. Targets up to one person per level in a 50x50 ft. area. Those who fail the save are confused for 1 round/level. A confused person rolls 1d10 each round to determine their course of action.<br/>1-2 Act normally for 1 round<br/>3-6 Do nothing for 1 round<br/>7-9 Attack nearest creature for 1 round<br/>10 Run away wildly for 1 round.</td>
+					</tr>
+					<tr>
+						<td>10d6 Flame Strike at will, 6 ticks, DC 18 for half. Area of effect is 10x10 ft. Column is 50 ft. high but is stopped by physical objects such as ceilings.</td>
+					</tr>
+					<tr>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	<h4>Water</h4>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Water I</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Water Spells</td>
+					</tr>
+					<tr>
+						<td>Immune Cold</td>
+					</tr>
+					<tr>
+						<td>+2 attack for water based summons</td>
+					</tr>
+					<tr>
+						<td>+2 DR</td>
+					</tr>
+					<tr>
+						<td>Create/Freeze water at a rate of 3 cubic feet, 5 ticks, at will</td>
+					</tr>
+					<tr>
+						<td>Your touch purifies up to one gallon of water, 5 ticks at will</td>
+					</tr>
+					<tr>
+						<td>+2 dodge</td>
+					</tr>
+					<tr>
+						<td>Water Breathing, permanent</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Water II</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Water Spells.</td>
+					</tr>
+					<tr>
+						<td>+15 HP for water based summons</td>
+					</tr>
+					<tr>
+						<td>Water Walking, at will, 6 ticks, 1 round per level.</td>
+					</tr>
+					<tr>
+						<td>Cure disease on touch, 6 ticks at will</td>
+					</tr>
+					<tr>
+						<td>Cure poison on touch, 6 ticks at will</td>
+					</tr>
+					<tr>
+						<td>Cone of Cold 5d6, 8 ticks, DC 16 for half. Cone is 5 ft. per level wide at the widest point, and 5 ft. per level long.</td>
+					</tr>
+					<tr>
+						<td>Heavy Mist in a 40 ft. cube, 3 times per day, 6 ticks.</td>
+					</tr>
+					<tr>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Water III</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Water Spells</td>
+					</tr>
+					<tr>
+						<td>+2 damage for water summons</td>
+					</tr>
+					<tr>
+						<td>Freedom of Movement, permanent on self.</td>
+					</tr>
+					<tr>
+						<td>Tranform into water with a movement on land of 10 and 90 in the water, at will, 10 ticks.</td>
+					</tr>
+					<tr>
+						<td>+2 attack bonus</td>
+					</tr>
+					<tr>
+						<td>Invisibility 3/day, 8 ticks</td>
+					</tr>
+					<tr>
+						<td>+2 dodge</td>
+					</tr>
+					<tr>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Water IV</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Water Spells</td>
+					</tr>
+					<tr>
+						<td>+4 willpower for summoning Named water summons</td>
+					</tr>
+					<tr>
+						<td>Freezing Sphere 10d6, 8 ticks, targets a distance up to 5 ft./level away. Explodes for 20 ft. radius cold damage.</td>
+					</tr>
+					<tr>
+						<td>+5 dodge for water based summons</td>
+					</tr>
+					<tr>
+						<td>Wall of Ice 3 times per day. Must be anchored. Costs 7 ticks. Max of: 1 ft. per level thick, 5 ft. perlevel, high and 10 ft. per level long. It has 10 hp/level.</td>
+					</tr>
+					<tr>
+						<td>Sleet Storm once per day. Creates a cube of driving sleet, 80x80x80 ft. Anyone in the cube cannot see more than 1 foot in front of their face. The ground becomes extremely slippery in the cube. Anyone attempting to move must make a reflex save at DC 18 or fall down. The storm can last up to 1 round per level.</td>
+					</tr>
+					<tr>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	<h4>Dark</h4>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Dark I</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Dark Spells</td>
+					</tr>
+					<tr>
+						<td>+2 Willpower for Voodoo</td>
+					</tr>
+					<tr>
+						<td>+2 Save vs. spell</td>
+					</tr>
+					<tr>
+						<td>See magic, permanent</td>
+					</tr>
+					<tr>
+						<td>Detect magic 5 ft. radius, permanent.</td>
+					</tr>
+					<tr>
+						<td>Darkness at will, 5 ticks, 10 ft. radius, DC 15 if person is targeted.</td>
+					</tr>
+					<tr>
+						<td>Hands become claws and act as natural weapons, 1d8 damage. Changing from hands to claws (or vice versa) costs 5 ticks.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Dark II</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Dark Spells</td>
+					</tr>
+					<tr>
+						<td>+2 Willpower for Voodoo</td>
+					</tr>
+					<tr>
+						<td>The difficulty check to break out of one of your summing circles is 5 higher<br/>.</td>
+					</tr>
+					<tr>
+						<td>Invisibility to Undead, permanent on self</td>
+					</tr>
+					<tr>
+						<td>+1d6 Negative energy damage on your claws</td>
+					</tr>
+					<tr>
+						<td>Detect Undead at will, 50 ft. radius.</td>
+					</tr>
+					<tr>
+						<td>.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Dark III</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Dark Spells</td>
+					</tr>
+					<tr>
+						<td>+2 Willpower for Voodoo</td>
+					</tr>
+					<tr>
+						<td>+2 to the difficulty checks on your spells against demons (including binding spells)</td>
+					</tr>
+					<tr>
+						<td>Fear in a 30 ft. long cone, 20 ft. wide cone. DC 17 to resist. 7 ticks, 3 times per day. Those who fail their saving throw run uncontrollably from the caster for 1 round per level.</td>
+					</tr>
+					<tr>
+						<td>+2d6 negative energy damage on your claws</td>
+					</tr>
+					<tr>
+						<td>Slow, targets actions cost an additional tick. DC 18, 8 ticks to use at will. Lasts 1 round per level.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Dark IV</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Dark Spells</td>
+					</tr>
+					<tr>
+						<td>+2 Willpower for Voodoo</td>
+					</tr>
+					<tr>
+						<td>+4 Willpower for summoning Named demons</td>
+					</tr>
+					<tr>
+						<td>Void Blade, on a weapon, 1/day, duration 1 day. A void weapon cuts through all non living matter as if it were exteremly soft butter.</td>
+					</tr>
+					<tr>
+						<td>Evard's Black Tentacles 3 times per day. Summons 1 tentacle per level in a 10x10 ft. square. The tentacles at 10 ft. long with an 18 strength. They randomly attack anyone inside the cube including the caster. Their attack bonus is equal to the level of the caster. The will first try to grapple any targets. Once all targets are grappled they will start beating the grappled targets randomly. Slap damage is 1d6+4 blunt damage. Each tentacle attacks once per round. The tentacles last for 1 round per level. It costs 8 ticks to summon them.</td>
+					</tr>
+					<tr>
+						<td>You are heal 50% of the damage you deal with your claws when striking.</td>
+					</tr>
+					<tr>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	<h4>Light</h4>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Light I</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Light Spells</td>
+					</tr>
+					<tr>
+						<td>Aura of Courage, +4 against fear saves in a 30 ft. radius</td>
+					</tr>
+					<tr>
+						<td>+2 Save vs. Spell</td>
+					</tr>
+					<tr>
+						<td>+1 Regeneration</td>
+					</tr>
+					<tr>
+						<td>Sanctuary 3 times per day, 1 round per level DC 15. Those attempting to attack the caster must make a save vs spell. Those who fail cannot attack the bearer of santuary for one round.</td>
+					</tr>
+					<tr>
+						<td>Light at will. Makes a light source that illuminates a 20 ft. radius area. 6 ticks lasts for 10 rounds per level.</td>
+					</tr>
+					<tr>
+						<td>See Life, permanent on self.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Light II</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Light Spells</td>
+					</tr>
+					<tr>
+						<td>Target gets +2 Strength or Dexterity for 2 hours per level. Usable twice per day. 6 ticks to use.</td>
+					</tr>
+					<tr>
+						<td>Ray of light at will, 6 ticks no save. 6d6 light damage against single undead target. </td>
+					</tr>
+					<tr>
+						<td>+1 Regeneration</td>
+					</tr>
+					<tr>
+						<td>Detect Lies 1 round per day once per day. 5 ticks to cast, DC 16 to give no inclination of truth of falsehood for any given statement.</td>
+					</tr>
+					<tr>
+						<td>Blinding Light 3 times per day. 6 ticks, DC 16. If target fails they are blinded for 1 round per level.</td>
+					</tr>
+					<tr>
+						<td>+2 DR</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Light III</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Light Spells</td>
+					</tr>
+					<tr>
+						<td>Shield Other twice per day you grant your protection to another person. Absorbing half the damage they take from the next hit. 5 ticks to use.</td>
+					</tr>
+					<tr>
+						<td>+1 Regeneration</td>
+					</tr>
+					<tr>
+						<td>Call Glory Sprite once per day. The sprite is permanent. You may have a max equal to your willpower.</td>
+					</tr>
+					<tr>
+						<td>Tongues, All understand your speech and you also understand everyone elses. Permanent on self.</td>
+					</tr>
+					<tr>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Light IV</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>+2 Willpower for Light Spells</td>
+					</tr>
+					<tr>
+						<td>+4 Willpower for summoning Named angels</td>
+					</tr>
+					<tr>
+						<td>+1 Regeneration</td>
+					</tr>
+					<tr>
+						<td>Banishment 3 times per day DC 18, 8 ticks. Any outer planar being (elementals, demons, angels, ect.) who fail the save is banished back to its home plane.</td>
+					</tr>
+					<tr>
+						<td>Turn Undead 10 ticks at will. Up to your willpower*4 HP of undead. DC is half your willpower +4. If an undead fails by 10 or more, they are destroyed.</td>
+					</tr>
+					<tr>
+						<td>Cleansing Light, heals 12d6 in a 20 ft. radius, 3 times per day, 5 ticks to use.</td>
+					</tr>
+					<tr>
+						<td>+4 save vs. voodoo</td>
+					</tr>
+					<tr>
+						<td>Bind someone in bands of arcane force. Reflex save at 18 to dodge. Once captuared the bands last for 1 round per level. It can be used 3 times per day and takes 6 ticks to use. The bands can be broken via 15 hp worth of physical damage or burst out with a strength check DC 10.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	<h4 id="magicalabilities">Magical Abilities</h4>
+	<h4><i>&epsilon; = 0</i></h4>
+	<div class="col-sm-12">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Cost</th>
+					<th>Ticks</th>
+					<th>Requirements</th>
+					<th>Effect</th>
+					<th>Duration</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Arcane Fire</td>
+					<td>5</td>
+					<td>5</td>
+					<td>None</td>
+					<td>Creates a cone 10 ft. per level with a radius of 10 ft. per level of arcane fire that does 1d8 per level damage.</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Conjure Armor</td>
+					<td>5</td>
+					<td>5</td>
+					<td>None</td>
+					<td>Summons a suit of armor that can be dismissed. Only one can exists at a time. This armor has a magical bonus of +level/3 rounded down.</td>
+					<td>Hour/level</td>
+				</tr>
+				<tr>
+					<td>Conjure Weapon</td> 			     
+					<td>5</td> 			     
+					<td>5</td> 			     
+					<td>None</td> 			     
+					<td>Summons a weapon of your choosing. Only one can exist at a time. This weapon has a magical bonus of +level/3 rounded down.</td> 			     
+					<td>Hour/level</td> 			     
+				</tr>
+				<tr>
+					<td>Healing Hand</td> 			     
+					<td>5</td> 			     
+					<td>5</td> 			     
+					<td>None</td> 			     
+					<td>Heals 1d8 per level on touch. Can be used level/4 times per day.</td>
+					<td>Instant</td> 			     
+				</tr>
+				<tr>
+				     
+					<td>Rejuvenating Touch</td> 			     
+					<td>5</td> 			     
+					<td>5</td> 			     
+					<td>None</td> 			     
+					<td>Gives regen 5 on touch. Can be used once per day.</td> 
+					<td>Round/level</td>
+	 			</tr>
+			</tbody>
+		</table>
+	</div>
+	<h4 id="nonmagicalabilities">NonMagical Abilities</h4>
+	<h4><i>&epsilon; > 0</i></h4>
+	<div class="col-sm-12">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<td><b>Name</b></td>
+					<td><b>Cost</b></td>
+					<td><b>Ticks</b></td>
+					<td><b>&epsilon;</b></td>
+					<td><b>Requirements</b></td>
+					<td><b>Effect</b></td>
+					<td><b>Duration</b></td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Berserk</td>
+					<td>5</td>
+					<td>1</td>
+					<td>2</td>
+					<td>None</td>
+					<td>The character goes into an uncontrolled rage. He may select the first target and after that must make a save vs. spell at 15 + rounds in berserk to recognize friend from foe. The user gains +6 strength and +3 DR.</td>
+					<td>Strrength Mod Rounds</td>
+				</tr>
+				<tr>
+					<td>Cheap Shot</td>
+					<td>5</td>
+					<td>4</td>
+					<td>2</td>
+					<td>None</td>
+					<td>The character makes an attack at d3 + strength bonus.</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Circle</td>
+					<td>3</td>
+					<td>2</td>
+					<td>3</td>
+					<td>None</td>
+					<td>A character quickly circles around an opponent obtaining a flank.</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Held Shot</td>
+					<td>5</td>
+					<td>5</td>
+					<td>2</td>
+					<td>None</td>
+					<td>A character may keep an arrow nocked and ready. He may then release the arrow for 1 tick less than his regular attack cost. (Ex: 5 ticks for a regular attack, 4 ticks if using quick shot)</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Improved Disarm</td>
+					<td>5</td>
+					<td>3</td>
+					<td>2</td>
+					<td>None</td>
+					<td>Decreases the tick cost and adds &epsilon; to disarm.</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Improved Trip</td>
+					<td>5</td>
+					<td>3</td>
+					<td>5</td>
+					<td>None</td>
+					<td>Decreases the tick cost and adds &epsilon; to trip.</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Quick Draw</td>
+					<td>3</td>
+					<td>1</td>
+					<td>5</td>
+					<td>None</td>
+					<td>Decreases the tick cost to draw a weapon or item and adds &epsilon;.</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Quick Recovery</td>
+					<td>3</td>
+					<td>2</td>
+					<td>3</td>
+					<td>None</td>
+					<td>Decreases the tick cost of standing up from the prone position and adds &epsilon;</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Riposte</td>
+					<td>4</td>
+					<td>3</td>
+					<td>5</td>
+					<td>Parry</td>
+					<td>A character whom is actively parrying may make a counter attack against a successfully dodges attack.</td>
+					<td>Instant</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<h4><i>&epsilon; = 0</i></h4>
+	<div class="col-sm-12">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<td><b>Name</b></td>
+					<td><b>Cost</b></td>
+					<td><b>Ticks</b></td>
+					<td><b>Requirements</b></td>
+					<td><b>Effect</b></td>
+					<td><b>Duration</b></td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Ambush</td>
+					<td>5</td>
+					<td>6</td>
+					<td>None</td>
+					<td>The character makes and attack at triple damage, if the defender is unaware of the character's presence. For example, the character has been hiding along a path or stalking a prey while invisible.</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Assassinate</td>
+					<td>10</td>
+					<td>10</td>
+					<td>4 Ranks in Backstab</td>
+					<td>Increases the mulitplier for a backstab from x5 to x10</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Backstab</td>
+					<td>2 + <i>n</i>. <i>n</i> is the number of times backstab has been taken where 0 &ge; <i>n</i> &ge; 4</td>
+					<td>6</td>
+					<td>None</td>
+					<td>If the target is unaware of the attacker, then a backstab may be performed. If the attack succeeds, the damage is multiplied by <i>n</i>+1</td>
+					<td>Instant</td>
+
+				</tr>
+				<tr>
+					<td>Burst of Speed</td>
+					<td>3</td>
+					<td>0</td>
+					<td>None</td>
+					<td>This ability doubles a character's base movement. This ability may be taken multiple times and used once per day per time taken. Finally, this ability may be declared active at anytime.</td>
+					<td>Until End of Round</td>
+				</tr>
+				<tr>
+					<td>Check Swing</td>
+					<td>3</td>
+					<td>2</td>
+					<td>None</td>
+					<td>Cancels current attack. For example, if you swing at someone who &epsilon; shifts out of the way, you can cancel your attack for 2 ticks instead of wasting the entire 6.</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Cleave</td>
+					<td>2</td>
+					<td>1</td>
+					<td>Can not be used in conjunction with precise cut or weapon finesse</td>
+					<td>If a character kills an enemy he can opt to continue and attack an adjacent enemy in reach. He can only do this once per attack action. If used during whirlwind attack, the cleave attack goes off immediately and the whirlwind attack continues after the cleave attack is resolved.</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Dance of Blades</td>
+					<td>5</td>
+					<td>1</td>
+					<td>Team Skill. Requires standing adjacent to atleast one other person witht eh same skill. Both people must execute the ability for it to take effect.</td>
+					<td>+2 to all parry rolls and -1 tick cost for main hand regular attacks. This skill may be activated normally during the character's segment or, optionally at the beginning of the round.</td>
+					<td>1 round</td>
+				</tr>
+				<tr>
+					<td>Driving Charge</td>
+					<td>5</td>
+					<td>7</td>
+					<td>None</td>
+					<td>A driving charge combines a melee strike with heavy forward momentum (Up to a max of the character's base movement). If the attack succeeds the opponent loses 3 ticks for the round. If the attack misses, the opponent is still left slightly off balance and loses 2 ticks. The attack does normal damage. If the victim would be taken to negative ticks by this move he is just brought to zero.</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Form Shield Wall</td>
+					<td>5</td>
+					<td>1</td>
+					<td>Team Skill. Requires standing adjacent to atleast one other person witht eh same skill. Both people must execute the ability for it to take effect.</td>
+					<td>+2 to all shield rolls. This skill may be activated normally during the character's segment or, optionally, at the begining of the round.</td>
+					<td>1 round</td>
+				</tr>
+				<tr>
+					<td>Frenzied Charge</td>
+					<td>5</td>
+					<td>8</td>
+					<td>None</td>
+					<td>The character makes a devastating charge attack (up to a max of his base movement) at a -2 to hit. It does x2 damage.</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Great Cleave</td>
+					<td>1</td>
+					<td>1</td>
+					<td>Cleave</td>
+					<td>Lets you cleave an unlimited number amount of times per attack action. Each cleave must kill someone to continue cleaving.</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Improved Driving Charge</td>
+					<td>5</td>
+					<td>6</td>
+					<td>Driving Charge</td>
+					<td>This ability targets a small group of opponents (Max of 4). Similar to driving charge, the character surges forward (up to a max of his base moevement) swigning wildly. Unlink driving charge, this attack doen no damage to the opponents. Each successful attack roll causes the oppoenent to lose 3 ticks. An unsuccessful attack only causes a loss of 2 ticks.</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Improved Parry</td>
+					<td>6</td>
+					<td>1</td>
+					<td>Parry</td>
+					<td>Like Parry this ability can be activated at either the beginning of the round or during the characters's segment. A character using this ability recieves +3 to dodge and shield rolls. This stacks with parry and the bonues from a parrying weapon..</td>
+					<td>Until End of Round</td>
+				</tr>
+				<tr>
+					<td>Parry</td>
+					<td>5</td>
+					<td>1</td>
+					<td>Weapon Proficiency</td>
+					<td>This ability is activated at either the beginning of the round or during the character's segment. A character using parry recieves +2 to dodge and shield rolls. This stacks with improved parry and the bonues from a parrying weapon.</td>
+					<td>Until End of Round</td>
+				</tr>
+				<tr>
+					<td>Sniper Shot</td>
+					<td>5</td>
+					<td>8</td>
+					<td>At least one rank in backstab</td>
+					<td>While using a crossbow, a character who is entirely undetected by his target, may execute a backstab attack attack from up to 30 feet away. This ability cannot be used in conjunction with assassinate.</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Spirited Charge</td>
+					<td>5</td>
+					<td>7</td>
+					<td>Mounted Combat</td>
+					<td>This charge attack (up to a max of the mount's base movement) made while on horseback. It deals double damage and triple damage if done with a lance.</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
+					<td>Whirlwind attack</td>
+					<td>5</td>
+					<td>7</td>
+					<td>None</td>
+					<td>This ability lets the character attack everyone clost to him. Each target needs to be within shift distance of the previous target and each target can only be attacked once.</td>
+					<td>Instant</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<h4><i>Passive</i></h4>
+	<div class="col-sm-12">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<td><b>Name</b></td>
+					<td><b>Cost</b></td>
+					<td><b>Requirements</b></td>
+					<td><b>Effect</b></td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Ambidexterity</td>
+					<td>4</td>
+					<td>None</td>
+					<td>Negates the attack penalty with your off hand and allows you to use a parrying weapon.</td>
+				</tr>
+				<tr>
+					<td>Armor Proficiency, Heavy</td>
+					<td>5</td>
+					<td>None</td>
+					<td>Allows character to wear heavy armor at no penalty</td>
+				</tr>
+				<tr>
+					<td>Armor Proficiency, Light</td>
+					<td>5</td>
+					<td>None</td>
+					<td>Allows character to wear light armor at no penalty</td>
+				</tr>
+				<tr>
+					<td>Aura of Courage</td>
+					<td>3</td>
+					<td>None</td>
+					<td>Makes character immune to fear and gives allies withing 30ft. a +4 to all fear based checkes.</td>
+				</tr>
+				<tr>
+					<td>Base Attack Bonus</td>
+					<td>2</td>
+					<td>None</td>
+					<td>Increases the character's base attack by +1. Can be taken any number of times.</td>
+				</tr>
+				<tr>
+					<td>Blind Fighting</td>
+					<td>3</td>
+					<td>None</td>
+					<td>Reduces the miss chance to 20% when fighting blinded or when fighting invisible creatures.</td>
+				</tr>
+				<tr>
+					<td>Dodge Bonus</td>
+					<td>2</td>
+					<td>None</td>
+					<td>Increases the characters base dodge by +1. Can be taken any number of times.</td>
+				</tr>
+				<tr>
+					<td>Fast Movement</td>
+					<td>4</td>
+					<td>None</td>
+					<td>Increases base movement speed by 10ft. This may only be purchased 6 times.</td>
+				</tr>
+				<tr>
+					<td>Flank Attack</td>
+					<td>3</td>
+					<td>None</td>
+					<td>This ability can be taken 3 times. Each time it is taken it increases the damage done by an attack from the flanking position by +3.</td>
+				</tr>
+				<tr>
+					<td>Flurry of Blows</td>
+					<td>5</td>
+					<td>None</td>
+					<td>This modifier can be applied to most attack actions. It lowers the tick cost by one but incurs a -2 penalty to hit.</td>
+				</tr>
+				<tr>
+					<td>Improved Critical</td>
+					<td>5</td>
+					<td>Weapon Proficiency</td>
+					<td>This ability doubles the critical range of the chosen weapon. Keen increases the multiplier by 1. For example a weapon that crits on 20 will crit on 19-20 with improved crit and 18-20 with keen and improved crit.</td>
+				</tr>
+				<tr>
+					<td>Improved Initiative</td>
+					<td>2</td>
+					<td>None</td>
+					<td>This ability adds +1 to a character's initiative roll. It can be taken any number of times.</td>
+				</tr>
+				<tr>
+					<td>Improved Unarmed Strike</td>
+					<td>3</td>
+					<td>None</td>
+					<td>This ability raises the damage done by unarmed attacks to 1d6. It also makes the damage lethal.</td>
+				</tr>
+				<tr>
+					<td>Lethal Shot</td>
+					<td>5 + <i>n</i>, where <i>n</i> is the number of Lethal SHots already taken. <i>n</i> stops increasing after 3. You continue to buy additional lethal shots at 8 points each.</td>
+					<td>None</td>
+					<td>Increases the damage of Bows and crossbows by 1d6 for each rank of lethal shot taken. This damage is aaplied last, after all multiplies.</td>
+				</tr>
+				<tr>
+					<td>Marksman</td>
+					<td>3</td>
+					<td>None</td>
+					<td>This ability may be taken multiple times. Each time it is taken, it increases the flank attack damage when using a crossbow by 2.</td>
+				</tr>
+				<tr>
+					<td>Mastery Move/Ability</td>
+					<td>DM's Discretion</td>
+					<td>DM's Discretion</td>
+					<td>The player invents a special move or ability with the DM.</td>
+				</tr>
+				<tr>
+					<td>Mounted Archery</td>
+					<td>3</td>
+					<td>Mounted Combat</td>
+					<td>This ability allows the character to fire a bow or crossbow from horse back with no penalty.</td>
+				</tr>
+				<tr>
+					<td>Mounted Combat</td>
+					<td>5</td>
+					<td>Ride Skill</td>
+					<td>Allows the character to attack from horse back at no penalty.</td>
+				</tr>
+				<tr>
+					<td>Nature Sense</td>
+					<td>1</td>
+					<td>None</td>
+					<td>This ability allows the character to identify plants and animals with perfect accuracy. He can also identify if water is safe to drink.</td>
+				</tr>
+				<tr>
+					<td>Pass without Trace</td>
+					<td>2</td>
+					<td>None</td>
+					<td>The character does not leave any kind of trail to be followed</td>
+				</tr>
+				<tr>
+					<td>Power Attack</td>
+					<td>5</td>
+					<td>Using a two handed grip on your weapon.</td>
+					<td>This ability is not an action but a modifier that be added to almost any type of attack. It negates all parrying bonus of the defender if the attacker's strength is higher. It also allows the attack to subtract at least 2 and up to his base attack from his hit roll and add it to his damage. Further, if the power attack is blocked by a shield, the defender loses 2 ticks. This ability may not be used in conjunction with precise cut or weapon finesse.</td>
+				</tr>
+				<tr>
+					<td>Precise Cut</td>
+					<td>3+ <i>n</i> where <i>n</i> is the number of precise cut ranks already taken. <i>n</i> stops increasing after it hits 3. You may continue to take ranks at a cost of 6.</td>
+					<td>None</td>
+					<td>Each time this ability is take, it adds 1d6 to melee attacks. This negates the strength bonus to hit and damage. The d6's can only be applied to slashing or piercing weapons. </td>
+				</tr>
+				<tr>
+					<td>Precognition</td>
+					<td>2</td>
+					<td>Uncanny Dodge</td>
+					<td>This ability lets the character dodge attacks from any source, even from sources they are totally unaware of. The character must be able to move appropriately.</td>
+				</tr>
+				<tr>
+					<td>Purity of Body</td>
+					<td>2</td>
+					<td>None</td>
+					<td>Makes the character immune to all non-magical diseases.</td>
+				</tr>
+				<tr>
+					<td>Rapid Shot</td>
+					<td>5</td>
+					<td>None</td>
+					<td>The character can make attacks with a bow or crossbow at a -2 penalty to hit for 1 less tick. This can not be used in conjunction with sniper shot.</td>
+				</tr>
+				<tr>
+					<td>Reflex Save</td>
+					<td>1</td>
+					<td>None</td>
+					<td>Increases the character's base reflex save by +1.</td>
+				</tr>
+				<tr>
+					<td>Run</td>
+					<td>3</td>
+					<td>None</td>
+					<td>Raises the full run modifier from x4 to x5.</td>
+				</tr>
+				<tr>
+					<td>Save vs. Spell</td>
+					<td>2</td>
+					<td>None</td>
+					<td>Increases the characetrs's base save vs. spell by +1. This ability can be taken any number of times.</td>
+				</tr>
+				<tr>
+					<td>Shield Proficiency</td>
+					<td>3</td>
+					<td>None</td>
+					<td>This ability lets the characeter use a shield to block attacks with no penalties.</td>
+				</tr>
+				<tr>
+					<td>Uncanny Dodge</td>
+					<td>5</td>
+					<td>None</td>
+					<td>This ability lets the character dodge attacks from multiple sources. He can even dodge attacks when caught off guard as long as the source is not magically hidden.</td>
+				</tr>
+				<tr>
+					<td>Venom Immunity</td>
+					<td>2</td>
+					<td>None</td>
+					<td>The character becomes immune to natural poisons.</td>
+				</tr>
+				<tr>
+					<td>Weapon Finesse</td>
+					<td>4</td>
+					<td>Weapon Proficiency</td>
+					<td>The character only uses his dexterity modifier for his attack bonus instead of the average of his strength and dexterity modifiers. This cannot be used with two handed weapons.</td>
+				</tr>
+				<tr>
+					<td>Weapon Focus</td>
+					<td>3</td>
+					<td>Weapon Proficiency</td>
+					<td>Adds 2 initiative when the character is using the chose weapon. This ability can be taken multiple times but each time it applies to a new weapon.</td>
+				</tr>
+				<tr>
+					<td>Weapon Proficiency</td>
+					<td>5</td>
+					<td>None</td>
+					<td>The character can use all weapons with no penalty.</td>
+				</tr>
+				<tr>
+					<td>Weapon Specialization</td>
+					<td>5</td>
+					<td>Weapon Focus</td>
+					<td>This ability add 1 &epsilon; to basic attacks with a given weapon. It can be take multiple times but each time it applies to a new weapon.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<h3>Rituals</h3>
+	<h4 id="rank1">Rank 1</h4>
+		<p class="half"><b>General</b></p>
+			<p class="tab"><u>Alarm</u><br/>This spell takes 5 minutes to cast and doesn't require any components. It can be case upon a threshold, an object, or a radius up to your willpower ft. The alarm lasts for one hour per willpower. It can be silent or quite loud.</p>
+			<p class="tab"><u>Minor Containment/Summoning Circle (crafted)</u><br/>This can be drawn using various items. Ash, blood, ink, carved in stone, carved in wood, forged in steel, designed with holly leaves, etc. The material will change the effectiveness of the circle based on the type of the summon. To determine if the circle was made without error, make a willpower check at DC 20. While in the summoning circle, the magic resistance of the outerplanar beings is negated and, additionally, they receieve a +6 to their saves vs spell. Once summoned, a creature can try to break out once per day. They make a saving throw against DC 14. Each day they are in the circle, they get an additional +4 to break out.</p>
+		<p class="half"><b>Light</b></p>
+			<p class="tab"><u>Conjure Glory Sprite</u><br/>This ritual requires a lit candle. This ritual conjures a small sprite formed of positive energy, about one foot tall. It will obey verbal commands. The maximum number of sprites a caster may have under his control is equal to his willpower. This ritual takes 10 minutes to finish.</p>
+			<p class="tab"><u>Minor Preserve Corpse</u><br/>This ritual requires a bell to ring over the corpse and a pinch of salt. The casting tims is 5 minutes. This ritual will preserve the corpse as it is for a number of days equal to the caster's current willpower. This spell does not preserve a corpse for use in undead creation.</p>
+		<p class="half"><b>Dark</b></p>
+			<p class="tab"><u>Conjure Shadow Sprite</u><br/>This ritual requires good quality ink. This ritual conjures a small sprite formed of negative energy, about one foot tall. It will obey verbal commands. The maximum number of sprites a caster can control is equal to his willpower. This ritual takes 10 minutes to finish.</p>
+			<p class="tab"><u>Create Skeleton</u><br/>Craft a skeleton out of atleast two human bones. The skeleton obeys simple verbal commands from it's creator, i.e. attack, wait, guard, follow. The ritual takes 10 minute to finish.</p>
+			<p class="tab"><u>Charm Person (crafted)</u><br/>This ritual may be cast upon any item. The ritual takes 10 minutes to cast. The item will be enchanted until discharged. When the item is touched by someone other than the caster, the must make a save vs. spell or be charmed by the original caster. The charmed person is very friendly to the caster, though by no means under the caster's control. The charm spell, if successful, lasts for wilpower/2 days. Any rude or untowards actions by the caster towards the charmed individual will grant the victim another save. Any outright attacks will break the charm spell.</p>
+		<p class="half"><b>Fire</b></p>
+			<p class="tab"><u>Conjure Fire Sprite</u><br/>This ritual requires a source of fire. It conjures a small sprite from the plane of fire, about one foot tall. It will obey verbal commands. The maximum number of sprites the caster may have under his control is equal to his will power. The ritual takes 10 minutes to finish.</p>
+		<p class="half"><b>Earth</b></p>
+			<p class="tab"><u>Conjure Earth Sprite</u><br/>This ritual requires a small living plant and good soil. It conjures a small sprite from the plane of earth, about one foot tall. It will obey verbal commands. The maximum number of sprites the caster may have under his control is equal to his will power. The ritual takes 10 minutes to finish.</p>
+			<p class="tab"><u>Mend Object</u><br/>This ritual takes 10 minutes to cast and requires a needle and some thread. This will perfectly mend breaks in non enchanted items. It cannot repair mechanical failures, but can mend cracks and tears. Even shattered stone can be repaired. It cannont mend a broken steam engine, it can however mend a single piece of the engine.</p>
+		<p class="half"><b>Water</b></p>
+			<p class="tab"><u>Brew sleeping Draught (crafted)</u><br/>This ritual takes 30 minutes to cast. It requires a vial of clean, pure water and three drops of warm milk. Anyone who imbides the potion will need to make a save vs. spell or fall asleep. The victim may be woken normally if vigorously shaken or hit. Otherwise, they will remain asleep for 1 hour per willpower.</p>
+			<p class="tab"><u>Conjure Water Sprite</u><br/>This ritual requires clean, fresh water. It conjures a small sprite from the plane of water, about one foot tall. It will obey verbal commands. The maximum number of sprites the caster may have under his control is equal to his will power. The ritual takes 10 minutes to finish.</p>
+		<p class="half"><b>Air</b></p>
+			<p class="tab"><u>Conjure Air Sprite</u><br/>This ritual requires a feather from any bird. It conjures a sprite from the plane of air, about one foot tall. It will obey verbal commands. The maximum number of sprites the caster may have under his control is equal to his will power. The ritual takes 10 minutes to finish.</p>
+	<h4 id="rank2">Rank 2</h4>
+		<p class="half"><b>General</b></p>
+			<p class="tab"><u>Minor Wall of Force (crafter)</u><br/>This spell is stored inside a piece of glass or diamond. When the wall is shattered so is the material component. When activated, this spell encloses the caster inside of a wall of arcane force. The wall has hit points of 15 + caster willpower. If diamond is used instead of glass, add 10 hp to the wall. The wall encircles the caster in a radius of 3 ft. and closes over his head ina bubble. The maximum duration of this spell once activiated is 1 minute per willpower.</p>
+			<p class="tab"><u>Project Mental Image</u><br/>
+			This ritual takes only a minute to cast.  It allows the caster concentrate on an image and then project an illusion of this image for people to see.
+			</p>
+			<p class="tab"><u>See Binding</u><br/>
+			This ritual takes 5 minutes to cast.  It allows the caster to see the bindings laid down by voodoo as thin silver strings.  This ritual lasts for 1 minute/willpower.
+</p>
+			<p class="tab"><u>Sleep Sand (crafted)</u><br/>
+			This spell allows the ritualist to enchant a palmful of sand (or salt, or dirt, or anything similar) with a binding of sleep.  The next person to touch this sand other than the caster will need to save vs spell or fall into a deep sleep.
+</p>
+
+		<p class="half"><b>Light</b></p>
+			<p class="tab"><u>Brew Revitalizing Draught (crafted)</u><br/>
+				This is a crafted ritual that creates a small clear potion.  When ingested, the imbiber is refreshed as if he had slept an entire eight hours.  This ritual takes 15 minutes to cast.  It should be noted that even with the effects of this potion, too many sleepless nights will begin to cause mental unstability.
+			</p>
+			<p class="tab"><u>Healing Salve (crafted)</u><br/>
+				This is a crafted ritual that creates a small amount of a clear minty smelling paste.  When this paste is applied to someone, that person is healed for willpower/2 d6 HP.  This ritual takes 15 minutes to cast.
+			</p>
+		<p class="half"><b>Dark</b></p>
+			<p class="tab"><u>Create Zombie</u><br/>This ritual requires a limb from a human. It creates a human sized zombie from the limb. It will obey verbal commands. This ritual takes 15 minutes to finish.</p>
+			<p class="tab"><u>Dominate Outsider</u><br/>
+				This ritual takes 30 minutes to cast.  If an outsider fails it's saving throw against this ritual, it will be permanently dominated.  If the caster knows the true name of the outsider, the outsider will receive a -4 to its saving throw.				</p>
+			<p class="tab"><u>Negative Energy Bomb (crafted)</u><br/> This is a crafted ritual.  It creates a small black orb.  When crushed or broken, the orb expels a cloud of negative energy that deals willpower/2 d4 damage in a willpower/4 foot radius.  The caster is healed for 50% of the damage dealt.  
+			</p>
+		<p class="half"><b>Fire</b></p>
+			<p class="tab"><u>Fire Bomb (crafted)</u><br/> This is a crafted ritual.  It creates a small fiery red orb.  It's very hot to the touch.  When crushed or broken, the orb explodes into a willpower/2 radius fireball.  The fireball deals willpower/2 d10 fire damage.
+			
+			</p>
+		<p class="half"><b>Earth</b></p>
+			<p class="tab"><u>Blessings of Gaia</u><br/></p>
+			<p class="tab"><u>Fertile Earth</u><br/></p>
+			<p class="tab"><u>Stone Spikes (crafted)</u><br/></p>
+		<p class="half"><b>Water</b></p>
+			<p class="tab"><u>Fog Bank (crafted)</u><br/>This ritual takes 10 minutes. It requires a glass bottle with a few drops of water. When smashed or uncorked a large fog bank rolls out obscuring vision down to 5 feet. The radius is willpower/2 feet.</p>
+			<p class="tab"><u>Snow Storm (crafted)</u><br/>This ritual takes 10 minutes to cast. It calls for a small glass ball or bottle half full of white flour. When smashed, a blast of extreme cold is unleashed in an area equal to the caster's willpower/4 ft. radius. This caught in this cold take willpower/2 d6 cold damage. Save vs. spell for half.</p>
+		<p class="half"><b>Air</b></p>
+			<p class="tab"><u>Lightning Rod (crafted)</u><br/></p>
+			<p class="tab"><u>Privacy Circle</u><br/></p>
+	<h4 id="rank3">Rank 3</h4>
+		<p class="half"><b>General</b></p>
+			<p class="tab"><u>Circle of Invisibility</u><br/>This ritual takes 5 minutes to cast and lasts as long as the caster maintains concentration or until somone breaks the spell by taking an offensive action. The circle is immobile and extends out 2 feet per willpower.</p>
+		<p class="half"><b>Light</b></p>
+		<p class="half"><b>Dark</b></p>
+			<p class="tab"><u>Conjure Imp</u><br/>This ritual requires a set of dice, a whole finger, and five gold coins. It summons an uncontrolled imp. An imp is about 1.5 feet tall and has bat wings. An imp will try and resist the summoning.<br/>Note: A summoned imp is NOT under control of the caster and must be bargained with or dominated. It will likely attack the summoner on sight if it can.</p>
+			<p class="tab"><u>Create Ghast</u><br/>This ritual requires a limb from a human and 5 human teeth. It creates a human sized ghast. It will obey verbal commands. It takes 20 minutes to finish.</p>
+		<p class="half"><b>Fire</b></p>
+			<p class="tab"><u>Conjure Minor Fire Elemental</u><br/>This ritual requires a very large bonfire, with flames at least 10 feet high. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish. You can control up to 1 for every 5 willpower.</p>
+			<p class="tab"><u>Rage of the Flames (crafted)</u><br/>When used it grants the user a willpower/7 bonus to strength and puts them in into a rage.</p>
+		<p class="half"><b>Earth</b></p>
+			<p class="tab"><u>Armor of Earth</u><br/>This ritual takes 10 minutes to cast and requires a small hammer and a piece of unforged iron. It grants the caster a bonus to DR equal to willpower/6 rounded down. The duration is willpower/2 hours.</p>
+			<p class="tab"><u>Conjure Minor Earth Elemental</u><br/>This ritual requires about 50 lbs. of fresh soil. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish. You can control up to 1 for every 5 willpower.</p>
+		<p class="half"><b>Water</b></p>
+			<p class="tab"><u>Conjure Minor Water Elemental</u><br/>This ritual requires about 50 gallons of fresh water. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish. You can control up to 1 for every 5 willpower.</p>
+			<p class="tab"><u>Mass Water Walking</u><br/>This ritual takes 10 minutes to cast and requires a bit of buoyant wood or a small amount of oil. It grants water walking to up to one person for every 2 willpower of the caster. The effect lasts for 1 minute per willpower of the caster.</p>
+		<p class="half"><b>Air</b></p>
+			<p class="tab"><u>Run with the Wind</u><br/>This spell takes 10 minutes to cast and requires a small fan. It grants the caster 10 movement for every 10 willpower rounded down to nearest 10. The effect lasts for willpower/2 hours.</p>
+	<h4 id="rank4">Rank 4</h4>
+		<p class="half"><b>General</b></p>
+			<p class="tab"><u>Binding Outsiders into Items</u><br/>
+			A non named angel/demon bound into an item has a draw equal to the rank of the summon.
+			The item has an internal mana equal to 5 times it’s rank.  This is refilled daily at midnight.
+			Named summons will be stronger, though also harder to bind in.
+
+			Binding an elemental into an item grants the item an elemental specific power.  The power of the item is proportional to the power of the elemental.  The effect of a bound elemental is determined in the same way a new ritual is built.  It will be a negotiation between the DM and the player.  The DM is recommended to be cognizant of what he’s giving away.  In a free form system like this, any given decision can easily be considered canon.  The next PC might wonder why he can’t get the same ability.  Some examples of bound elemental abilities are as follows:<br>
+
+(Rank 1 Summon) Fire Sprite - Affect normal files once per day.<br>
+(Rank 1 Summon) Glory Sprite - Light 20 ft radius, 10 rounds, once per day<br>
+(Rank 3 Summon) Minor Fire Elemental - 2d6 fire bolt, twice per day, 5 ticks<br>
+(Rank 4 Summon) Salamander - Make a weapon flaming<br>
+(Rank 5 Summon) Water Elemental - Cold Resist 10<br>
+(Rank 5 Summon) Earth Elemental - +2 on a weapon or armor<br>
+(Rank 7 Summon) Major Air Elemental - Fly 50 ft, at will<br>
+
+
+			In order to bind a summon into an item, the summon must either go willingly or be dominated.  <br>
+			The binding ritual takes 1 day per rank of the summon you are binding.  Any item may be used.  Binding more than 1 summon per item is doable but has an 80% - the caster’s will power of destroying the item.  The chance to blow up the item goes up by 10% per summon inside.<br>
+			NOTE: This ritual may be taken under non general elements; however, then the binding is specific to that element.
+			
+			</p>
+			<p class="tab"><u>Containment/Summon Circle</u><br/> This can be drawn using various items. Ash, blood, ink, carved in stone, carved in wood, forged in steel, designed with holly leaves, etc. The material will change the effectiveness of the circle based on the type of the summon. To determine if the circle was made without error, make a willpower check at DC 40. While in the summoning circle, the magic resistance of the outerplanar beings is negated and, additionally, the receieve a =6 to their saves vs spell. Once summoned, a creature can try to break out once per hour. They make a saving throw against DC 20. Each day they are in the circle, they get an additional +4 to break out.</p>
+			<p class="tab"><u>Wall of Force (crafted)</u><br/>The spell is stored inside a piece of glass or diamond. When the wall is shattered so is the material component. When activated, this spell encloses the caster inside a bubble of arcane force with a 3ft. radius. The wall has 20 + 1.5*willpower. If diamond is used instead of glass. add 20 HP to the wall. The maximum duration once activated is 5 minutes per willpower.</p>
+		<p class="half"><b>Light</b></p>
+			<p class="tab"><u>Conjure Angel</u><br/>This ritual requires a small scale with a gavel placed on one balance and a beggar's cup on the other. It conjures an Angel of rank N, where N is chose by the caster at the time of the summoning and has a max of the ritualist's Light rank and a minimum of 4. Angel are generally humanoid in appearance. The exact appearance and gender is up to the DM at the time of the summoning.<br/>Note: A summoned angel is NOT under the control of the summoner and must be bargained with or dominiated. If not properly contained in a summoning circle, it may attack the summoner on sight, try to dismiss itself, or try anything it chooses.</p>
+		<p class="half"><b>Dark</b></p>
+			<p class="tab"><u>Conjure Demon</u><br/>This ritual requires a small brazier with burning coals placed inside and blood poured on the coals during the final rites. it conjures a deamon of rank N, where N is chosen by the caster at the time of the summoning and has a maximum of the ritualist's Dark rank and a minimum of 4. Demons tend to vary wildly in appearance. The exact appearance and gender is up to the DM at the time of the summoning.<br/>Note: A summoned demon is NOT under control of the summoner and must be bargained with or dominated. If not properly contained in a summoning circle, a conjured Demon will almost certainly attack the summoner on sight.</p>
+			<p class="tab"><u>Raise Ghost</u><br/>This ritual requires a human corpse no more than 3 days old. It raises a ghost from the corpse. It will obey verbal commands. The ritual takes 30 minutes to finish.</p>
+		<p class="half"><b>Fire</b></p>
+			<p class="tab"><u>Call Salamander</u><br/>This ritual requires a large fire or heat source such as a bonfire. It conjures a salamander from the plane of fire. You may have no more than willpower/10 rounded down conjured at anytime.<br/>A salamander is a creature of fire, typically taking on the appearance of a large red lizard. A salamander is a minor wizard in it's own right and can assists a wizard in further fire based magic. A salamander cannont leave the fire source in which it is conjured. The ritual takes 1 hour to finish.</p>
+		<p class="half"><b>Earth</b></p>
+			<p class="tab"><u>Call Gnome</u><br/>This ritual requires a source of fertile earth. It conjures a gnome from the plane of earth. You may only have willpower/10 conjured at any time.<br/>A gnome is a creature of earth typically taking the appearance of a short rotund man with a jolly face and ruddy complexion. A gnome is a minor wizard in it's own right and can assist a wizard in further earth based magic. A gnome cannot leave the area in which it is conjured. The ritual takes 1 hour to complete.</p>
+		<p class="half"><b>Water</b></p>
+			<p class="tab"><u>Call Undine</u><br/>This ritual requires a running source of water such as a river or stream. It conjures an undine from the plane of water. You may have no more than willpower/10 rounded down conjured at anytime.<br/>An undine is a creature of water, typically taking on the appearance of a gilled woman. An undine is a minor wizard in it's own right and can assist a wizard in further water based magic. An undine cannot leave the water source in which it is conjured. This ritual takes 1 hour to complete.</p>
+			<p class="tab"><u>Ice Lance (crafted)</u><br/>This ritual taked 10 minutes and requires a needle. When released, a large spear of ice is launched. The spear is 5 ft. long and strikes for willpower/2 d6 physical damage.</p>
+		<p class="half"><b>Air</b></p>
+			<p class="tab"><u>Call Sylph</u><br/>This ritual requires open air and must be performed outside. This ritual conjures a slyph from the plane of air. You may have no more than willpower/10 conjured at any time.<br/>A sylph is a creature of air, typically taking on the appearance of an ethereal, young woman. A sylph is a minor wizard in it's own right and can assist a wizard in further air based magic. A slyph cannot leave the vicinity in which it is conjured. This ritual takes 1 hour to finish.</p>
+	<h4 id="rank5">Rank 5</h4>
+		<p class="half"><b>General</b></p>
+			<p class="tab"><u>Major Prison Circle</u><br/>This ritual enchants an area to trall all who enter. It takes 15 minutes to cast and lasts willpower/2 days/ It requires the area be outlined in some way )drawn in chalk, outlined in steel, ect.) If the outline is broken the spell is broken. It can not be broken from inside the circle. The material effects the save. Something like chalk would give the victim a +2 while something like steel would give them a -2. </p>
+		<p class="half"><b>Light</b></p>
+		<p class="half"><b>Dark</b></p>
+			<p class="tab"><u>Create Shadow</u><br/>This ritual requires slaying a person during the ritual. This ritual raises a shadow from the released soul. It will obey verbal commands. The ritual takes 30 minutes to finish.</p>
+		<p class="half"><b>Fire</b></p>
+			<p class="tab"><u>Conjure Fire Elemental</u><br/>This ritual requires a fire source at least as large as a bonfire. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only control willpower/12 rounded down at anytime.</p>
+		<p class="half"><b>Earth</b></p>
+			<p class="tab"><u>Conjure Earth Elemental</u><br/>This ritual requires about 500 lbs. of earth and stone. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only control willpower/12 rounded down at anytime.</p>
+		<p class="half"><b>Water</b></p>
+			<p class="tab"><u>Conjure Water Elemental</u><br/>This ritual requires about 150 gallons of fresh water. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only control willpower/12 rounded down at anytime.</p>
+		<p class="half"><b>Air</b></p>
+			<p class="tab"><u>Conjure Air Elemental</u><br/>This ritual requires a flute to play along with being outside in the open air. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only control willpower/12 rounded down at anytime.</p>
+			<p class="tab"><u>Create Flying Carpet (grafted)</u><br/>This ritual takes 1 hour. It enchants a rug of up to willpower/2 ft. by willpower/2 ft. The enchantment lasts for up to willpower hours. This spell imbues the carpet with the ability to fly and carry up to 25 lbs. per willpower of the caster. The speed of the carpet is 3 times willpower. The carpet has 1hp per willpower of the caster.</p>
+	<h4 id="rank6">Rank 6</h4>
+		<p class="half"><b>General</b></p>
+			<p class="tab"><u>Gate</u><br/>This ritual takes 10 minutes to cast and requires inscribing runes in a cirle. It creates a gate with radius equal to willpower/2 feet and lasts for willpower minutes. The gate is a two way portal and the end points are the caster's currentl location and any place he is familiar with.</p>
+			<p class="tab"><u>Recall (crafted)</u><br/>This ritual take one hour to complete. It enchants and item with the ability to teleport the caster back to the a predesignated spot.</p>
+		<p class="half"><b>Light</b></p>
+		<p class="half"><b>Dark</b></p>
+			<p class="tab"><u>Create Wight</u><br/></p>
+			<p class="tab"><u>Steal Youth</u><br/>A very evil ritual. It requires 5 hours to cast and something precious to the victim. The ritual ages the victim by a number of years up tot he caster's willpower and lowers the age of the cast by the same number of years.</p>
+			<p class="tab"><u>Unholy Syphon</u><br/>This ritual takes 1 hour to cast and requires a living human. The ritual drains the victims of all health and vitality leaving them withered and weak. The caster transfers this life force into another recipient in the form of 4 strength and 4 dexterity. This spell lasts as long as the victim is kept alive. As the victim is completely helpless, he would need to be fed/cared for if this is to last for any significant length of time.</p>
+		<p class="half"><b>Fire</b></p>
+			<p class="tab"><u>Flames of Truth</u><br/>This ritual requires a large fire source and a sacrifice of magic to the flames. It takes 10 minutes to complete. When the caster peers at someone through the fires, if the victim fails a save vs. spell, their mind is an open book to the caster. All memories and current thoughts may be rifled through at will for as long as the victim is watched through the fire.</p>
+		<p class="half"><b>Earth</b></p>
+			<p class="tab"><u>Stabilize Matter Matrix</u><br/>This ritual requires a small bar of platinum, weight approximatly 2 pounds. During the ritua, which takes 2 hours, the platinum is forged into the item. This allows the item to retain a higher enchantment than was previously possible If this is cast on a weapon, it allows it to hold an additional 2d6 elemental damage (either imbued via free magic or from binding an elemental). When cast on another item, it reduces the chance of multiple enchantments breaking the item by 1% per willpower of the caster.</p>
+		<p class="half"><b>Water</b></p>
+		<p class="half"><b>Air</b></p>
+	<h4 id="rank7">Rank 7</h4>
+		<p class="half"><b>General</b></p>
+			<p class="tab"><u>Greater Containment/Summoning Circle</u><br/> This can be drawn using various items. Ash, blood, ink, carved in stone, carved in wood, forged in steel, designed with holly leaves, etc. The material will change the effectiveness of the circle based on the type of the summon. To determine if the circle was made without error, make a willpower check at DC 54. While in the summoning circle, the magic resistance of the outerplanar beings is negated and, additionally, the receieve a -8 to their saves vs spell. Once summoned, a creature can try to break out once per hour. They make a saving throw against DC 30. Each day they are in the circle, they get an additional +4 to break out.</p>
+			<p class="tab"><u>Greater Wall of Force (crafted)</u><br/>The spell is stored inside a piece of glass or diamond. When the wall is shattered so is the material component. When activated, the caster is enclosed in a bubble of arcane force. The wall is impervious to normal physical damage and bust be destroyed through magic (i.e. dispelled, voided, etc.) or waited out. The maximum duration is 10 minutes per willpower.</p>
+		<p class="half"><b>Light</b></p>
+		<p class="half"><b>Dark</b></p>
+		<p class="half"><b>Fire</b></p>
+			<p class="tab"><u>COnjure Greater Fire Elemental</u><br/>This ritual requires a fire source at least 30 feet high. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only have willpower/15 contorlled at a time.</p>
+		<p class="half"><b>Earth</b></p>
+			<p class="tab"><u>Conjure Greater Earth Elemental</u><br/>This ritual requires 1500 lbs. of earth and stone. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only have willpower/15 contorlled at a time.</p>
+		<p class="half"><b>Water</b></p>
+			<p class="tab"><u>Conjure Greater Water Elemental</u><br/>This ritual require 300 gallons of fresh water. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only have willpower/15 contorlled at a time.</p>
+		<p class="half"><b>Air</b></p>
+			<p class="tab"><u> Conjure Greater Air Elemental</u><br/>This ritual requires a flute to play along with being outdoors in open air. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only have willpower/15 contorlled at a time.</p>
+	<h4 id="rank8">Rank 8</h4>
+		<p class="half"><b>General</b></p>
+			<p class="tab"><u>Scry on Item</u><br/></p>
+		<p class="half"><b>Light</b></p>
+		<p class="half"><b>Dark</b></p>
+		<p class="half"><b>Fire</b></p>
+		<p class="half"><b>Earth</b></p>
+			<p class="tab"><u>Awaken Treant</u><br/>This ritual requires a living tree at least 20 ft. tall. The Treant obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only have willpower/20 contorlled at a time.</p>
+</p>
+		<p class="half"><b>Water</b></p>
+		<p class="half"><b>Air</b></p>
+	<h4 id="rank9">Rank 9</h4>
+		<p class="half"><b>General</b></p>
+		<p class="half"><b>Light</b></p>
+		<p class="half"><b>Dark</b></p>
+		<p class="half"><b>Fire</b></p>
+		<p class="half"><b>Earth</b></p>
+		<p class="half"><b>Water</b></p>
+		<p class="half"><b>Air</b></p>
+			<p class="tab"><u></u><br/></p>
+	<h4 id="summons">Summon Stats</h4>
+	<p class="half"><b>Light</b></p>
+	<div class="col-sm-12">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Glory Sprite</th>
+					<th>Angel</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>HP</th>
+					<td>4</td>
+					<td>20 + 10*Rank</td>
+				</tr>
+				<tr>
+					<th>Size</th>
+					<td>Small</td>
+					<td>Varies</td>
+				</tr>
+				<tr>
+					<th>Ticks</th>
+					<td>6</td>
+					<td>7 + Rank</td>
+				</tr>
+				<tr>
+					<th>Movement</th>
+					<td>30 Flight</td>
+					<td>30 +10*Rank/3 (round down to nearest 10)</td>
+				</tr>
+				<tr>
+					<th>Dodge</th>
+					<td>+2</td>
+					<td>+Rank</td>
+				</tr>
+				<tr>
+					<th>Attack</th>
+					<td>+2</td>
+					<td>+Rank</td>
+				</tr>
+				<tr>
+					<th>Iniative</th>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Damage</th>
+					<td>1d4 Fire</td>
+					<td>Per Weapon/Ability</td>
+				</tr>
+				<tr>
+					<th>Str</th>
+					<td>10 +0</td>
+					<td>18 + 4</td>
+				</tr>
+				<tr>
+					<th>Int</th>
+					<td>14 +2</td>
+					<td>14 +2</td>
+				</tr>
+				<tr>
+					<th>Dex</th>
+					<td>14 +2</td>
+					<td>14 +2</td>
+				</tr>
+				<tr>
+					<th>Save vs. Spell</th>
+					<td>+0</td>
+					<td>Rank 4  = 1, Rank 5 = 4, Rank 6 = 10, Rank 7 = 13, Rank 8 = 18, Rank 9 = 21, Rank 10 = 26</td>
+				</tr>
+				<tr>
+					<th>Reflex</th>
+					<td>+2</td>
+					<td>+5+Rank</td>
+				</tr>
+				<tr>
+					<th>DR</th>
+					<td>0</td>
+					<td>2+Rank</td>
+				</tr>
+				<tr>
+					<th>Resists</th>
+					<td>100% Fire</td>
+					<td>50% Magic</td>
+				</tr>
+				<tr>
+					<th>Abilites</th>
+					<td>Creat light in a 5 ft. radius at will.</td>
+					<td>Rank + 2 abilites(usually physical) chosen by DM at summoning.<br/>Regeneration 1<br/>Free Magic, Draw equal to rank, Free magic rank equal to rank/2 (rounded down), Mana equal to rank*5 and schools determined by DM at summoning.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p class="half"><b>Dark</b></p>
+	<div class="col-sm-12">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Shadow Sprite</th>
+					<th>Imp</th>
+					<th>Demon</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>HP</th>
+					<td>4</td>
+					<td>30</td>
+					<td>20 + 10*Rank</td>
+				</tr>
+				<tr>
+					<th>Size</th>
+					<td>Small</td>
+					<td>Small</td>
+					<td>Varies</td>
+				</tr>
+				<tr>
+					<th>Ticks</th>
+					<td>6</td>
+					<td>10</td>
+					<td>7+Rank</td>
+				</tr>
+				<tr>
+					<th>Movement</th>
+					<td>30</td>
+					<td>50 Flight</td>
+					<td>30 +10*Rank/3 (round down to nearest 10)</td>
+				</tr>
+				<tr>
+					<th>Dodge</th>
+					<td>+2</td>
+					<td>+5</td>
+					<td>+Rank</td>
+				</tr>
+				<tr>
+					<th>Attack</th>
+					<td>+0</td>
+					<td>+4</td>
+					<td>+Rank</td>
+				</tr>
+				<tr>
+					<th>Iniative</th>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Damage</th>
+					<td>1d4 Cold</td>
+					<td>1d6 +4 Claws</td>
+					<td>Per Weapon/ability</td>
+				</tr>
+				<tr>
+					<th>Str</th>
+					<td>10 +0</td>
+					<td>12 +1</td>
+					<td>18 +4</td>
+				</tr>
+				<tr>
+					<th>Int</th>
+					<td>12 +1</td>
+					<td>12 +1</td>
+					<td>14 +2</td>
+				</tr>
+				<tr>
+					<th>Dex</th>
+					<td>14 +2</td>
+					<td>14 +2</td>
+					<td>14 +2</td>
+				</tr>
+				<tr>
+					<th>Save vs. Spell</th>
+					<td>+0</td>
+					<td>+1</td>
+					<td> Rank 4  = 1, Rank 5 = 4, Rank 6 = 10, Rank 7 = 13, Rank 8 = 18, Rank 9 = 21, Rank 10 = 26</td>
+				</tr>
+				<tr>
+					<th>Reflex</th>
+					<td>+2</td>
+					<td>+8</td>
+					<td>+5+Rank</td>
+				</tr>
+				<tr>
+					<th>DR</th>
+					<td>0</td>
+					<td>3</td>
+					<td>2+Rank</td>
+				</tr>
+				<tr>
+					<th>Resists</th>
+					<td>100% Cold</td>
+					<td>50% Magic</td>
+					<td>50% Magic</td>
+				</tr>
+				<tr>
+					<th>Abilites</th>
+					<td>Create darkness in a 5 ft. area at will.</td>
+					<td>A summoned imp has atleast 3 abilites chosen by the DM or rolled randomly from the following list: Mimic Voice, Silent Image, Magic missle (level 3 caster), Shapeshift (tiny or small size only), invisibility at will, Pyrotechnics, Detect Thoughts.</td>
+					<td> Rank + 2 abilites(usually magical) chosen by DM at summoning.<br/>Regeneration 1<br/>Free Magic, Draw equal to rank, Free magic rank equal to rank/2 (rounded down), Mana equal to rank*5 and schools determined by DM at summoning.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p class="half"><b>Undead</b></p>
+	<div class="col-sm-12">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Skeleton</th>
+					<th>Zombie</th>
+					<th>Ghast</th>
+					<th>Ghost</th>
+					<th>Shadow</th>
+					<th>Wight</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>HP</th>
+					<td>4</td>
+					<td>15</td>
+					<td>35</td>
+					<td>45</td>
+					<td>60</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Size</th>
+					<td>Medium</td>
+					<td>Medium</td>
+					<td>Medium</td>
+					<td>Medium</td>
+					<td>Medium</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Ticks</th>
+					<td>6</td>
+					<td>9</td>
+					<td>10</td>
+					<td>10</td>
+					<td>12</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Movement</th>
+					<td>30</td>
+					<td>30</td>
+					<td>40</td>
+					<td>30 Flight</td>
+					<td>40 Flight</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Dodge</th>
+					<td>+0</td>
+					<td>+2</td>
+					<td>+4</td>
+					<td>+6</td>
+					<td>+8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Attack</th>
+					<td>+0</td>
+					<td>+2</td>
+					<td>+4</td>
+					<td>+6</td>
+					<td>+8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Iniative</th>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>+2</td>
+					<td>+3</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Damage</th>
+					<td>1d6 + 1 Claw</td>
+					<td>1d8 + 2 Claw</td>
+					<td>1d8 + 5 Claw</td>
+					<td>2d6 Negative Energy</td>
+					<td>2d6 Negative Energy</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Str</th>
+					<td>12 +1</td>
+					<td>14 +2</td>
+					<td>20 +5</td>
+					<td>-</td>
+					<td>-</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Int</th>
+					<td>8 -1</td>
+					<td>8 -1</td>
+					<td>8 -1</td>
+					<td>10 +0</td>
+					<td>10 +0</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Dex</th>
+					<td>10 +0</td>
+					<td>10 +0</td>
+					<td>10 +0</td>
+					<td>10 +0</td>
+					<td>10 +0</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Save vs. Spell</th>
+					<td>0</td>
+					<td>+1</td>
+					<td>+4</td>
+					<td>+6</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Reflex</th>
+					<td>+0</td>
+					<td>+0</td>
+					<td>+0</td>
+					<td>+5</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>DR</th>
+					<td>0</td>
+					<td>4</td>
+					<td>5</td>
+					<td>4</td>
+					<td>7</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Resists</th>
+					<td>100% Cold, 50% Fire, 75% Lightning, 50% Slash</td>
+					<td>100% Cold, 50% Lighting</td>
+					<td>100% Cold, 50% Lightning</td>
+					<td>100% Cold</td>
+					<td>100% Cold</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Abilites</th>
+					<td></td>
+					<td></td>
+					<td>A ghast always exudes the noxious smell of death. Anyone withing 5 ft. of the ghast will suffer a -2 penalty to all rolls if they fail a save vs. spell at 16. Further, a ghast's claws can paralyze a victim. Anyone struck by the ghast must make a save vs. spell at 14 or be paralyzed for 1d4 rounds.</td>
+					<td>Any damage done by a ghost is added to it's life total to a max of 45. Physicals attacks against a ghost have a 50% miss chance as the ghost only exists partly in this plane of existence.</td>
+					<td>A shadow is immune to unenchanted weapons. Anyone hit by a shado must make a save vs. spell at DC 12 or be drained of 2 strength. This strength is drained until the victim is healed to full HP.</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p class="half"><b>Fire</b></p>
+	<div class="col-sm-12">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Fire Sprite</th>
+					<th>Minor Fire Elemental</th>
+					<th>Salamander</th>
+					<th>Fire Elemental</th>
+					<th>Greater Fire Elemental</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>HP</th>
+					<td>4</td>
+					<td>40</td>
+					<td>50</td>
+					<td>55</td>
+					<td>85</td>
+				</tr>
+				<tr>
+					<th>Size</th>
+					<td>Small</td>
+					<td>Medium</td>
+					<td>Large</td>
+					<td>Large</td>
+					<td>Huge</td>
+				</tr>
+				<tr>
+					<th>Ticks</th>
+					<td>6</td>
+					<td>10</td>
+					<td>12</td>
+					<td>15</td>
+					<td>18</td>
+				</tr>
+				<tr>
+					<th>Movement</th>
+					<td>30</td>
+					<td>50</td>
+					<td>30</td>
+					<td>50</td>
+					<td>60</td>
+				</tr>
+				<tr>
+					<th>Dodge</th>
+					<td>+2</td>
+					<td>+4</td>
+					<td>+6</td>
+					<td>+8</td>
+					<td>+12</td>
+				</tr>
+				<tr>
+					<th>Attack</th>
+					<td>+0</td>
+					<td>+4</td>
+					<td>+2</td>
+					<td>+10</td>
+					<td>+14</td>
+				</tr>
+				<tr>
+					<th>Iniative</th>
+					<td>0</td>
+					<td>+2</td>
+					<td>0</td>
+					<td>+3</td>
+					<td>+4</td>
+				</tr>
+				<tr>
+					<th>Damage</th>
+					<td>1d6 Fire</td>
+					<td>3d6 Fire</td>
+					<td>1d6 + 2 Fire</td>
+					<td>4d6 Fire</td>
+					<td>6d6 Fire</td>
+				</tr>
+				<tr>
+					<th>Str</th>
+					<td>10 +0</td>
+					<td>10 +0</td>
+					<td>14 +2</td>
+					<td>14 +2</td>
+					<td>14 +2</td>
+				</tr>
+				<tr>
+					<th>Int</th>
+					<td>12 +1</td>
+					<td>6 -2</td>
+					<td>14 +2</td>
+					<td>6 -2</td>
+					<td>6 -2</td>
+				</tr>
+				<tr>
+					<th>Dex</th>
+					<td>14 +2</td>
+					<td>14 +2</td>
+					<td>10 +0</td>
+					<td>22 +6</td>
+					<td>26 +8</td>
+				</tr>
+				<tr>
+					<th>Save vs. Spell</th>
+					<td>+0</td>
+					<td>+4</td>
+					<td>+6</td>
+					<td>+8</td>
+					<td>+13</td>
+				</tr>
+				<tr>
+					<th>Reflex</th>
+					<td>+2</td>
+					<td>+2</td>
+					<td>+4</td>
+					<td>+8</td>
+					<td>+13</td>
+				</tr>
+				<tr>
+					<th>DR</th>
+					<td>0</td>
+					<td>4</td>
+					<td>5</td>
+					<td>5</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<th>Resists</th>
+					<td>100% Fire, -100% Cold</td>
+					<td>100% Fire, 75% Lightning, -100% Cold</td>
+					<td>100% Fire, 75% Lightning, -100% Cold</td>
+					<td>100% Fire, 75% Lightning, -100% Cold</td>
+					<td>100% Fire, 75% Lightning, -100% Cold</td>
+				</tr>
+				<tr>
+					<th>Abilites</th>
+					<td>Can create fires as large as a regular torch flame and can snuff fires as large as camp fires.</td>
+					<td>Shoot a 1d6 fire bolt, 8 ticks.</td>
+					<td>Limited control over the fire where it was conjured. Can assist a wizard in fire based magic (+1 Willpower). Once per day grant a fire blessing from the following list: Fire Immunity, fire breath(20 ft. radius and 20 ft. long cone with save 18 for half dealing 5d6 fire damage, +10 movement speed. The blessing lasts for one day.</td>
+					<td> Can fling blobs of liquid flame from its body. Upon striking, this fiery liquird deals 2d6 fire damage (save at 15 for half). If the victim fails the save, the liquid sticks tot he victim and they will continue to burn for 1d6 fire damage. It burns off after 1d3 rounds.</td>
+					<td>Can fling blobs of liquid flame from its body. Upon striking, this fiery liquird deals 2d6 fire damage (save at 15 for half). If the victim fails the save, the liquid sticks tot he victim and they will continue to burn for 1d6 fire damage. It burns off after 1d3 rounds.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p class="half"><b>Earth</b></p>
+	<div class="col-sm-12">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Earth Sprite</th>
+					<th>Minor Earth Elemental</th>
+					<th>Gnome</th>
+					<th>Earth Elemental</th>
+					<th>Greater Earth Elemental</th>
+					<th>Treant</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>HP</th>
+					<td>4</td>
+					<td>55</td>
+					<td>70</td>
+					<td>85</td>
+					<td>125</td>
+					<td>130</td>
+				</tr>
+				<tr>
+					<th>Size</th>
+					<td>Small</td>
+					<td>Medium</td>
+					<td>Large</td>
+					<td>Large</td>
+					<td>Huge</td>
+					<td>Large or Huge</td>
+				</tr>
+				<tr>
+					<th>Ticks</th>
+					<td>6</td>
+					<td>10</td>
+					<td>12</td>
+					<td>15</td>
+					<td>18</td>
+					<td>12</td>
+				</tr>
+				<tr>
+					<th>Movement</th>
+					<td>30</td>
+					<td>30</td>
+					<td>30</td>
+					<td>30</td>
+					<td>30</td>
+					<td>40 (or 50 if huge)</td>
+				</tr>
+				<tr>
+					<th>Dodge</th>
+					<td>+1</td>
+					<td>+1</td>
+					<td>+4</td>
+					<td>+2</td>
+					<td>+2</td>
+					<td>+1</td>
+				</tr>
+				<tr>
+					<th>Attack</th>
+					<td>+0</td>
+					<td>+4</td>
+					<td>+1</td>
+					<td>+8</td>
+					<td>+12</td>
+					<td>+12</td>
+				</tr>
+				<tr>
+					<th>Iniative</th>
+					<td>-2</td>
+					<td>0</td>
+					<td>0</td>
+					<td>+2</td>
+					<td>+2</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Damage</th>
+					<td>1d4 + 2 Blunt</td>
+					<td>1d8 + 5 Blunt</td>
+					<td>1d6 + 2 Blunt</td>
+					<td>1d12 + 8 Blunt</td>
+					<td>3d6 + 12 Blunt</td>
+					<td>3d6 + 15 Blunt</td>
+				</tr>
+				<tr>
+					<th>Str</th>
+					<td>14 +2</td>
+					<td>20 +5</td>
+					<td>14 +2</td>
+					<td>22 +6</td>
+					<td>28 +9</td>
+					<td>34 + 12</td>
+				</tr>
+				<tr>
+					<th>Int</th>
+					<td>12 +1</td>
+					<td>6 -2</td>
+					<td>14 +2</td>
+					<td>6 -2</td>
+					<td>6 -2</td>
+					<td>6 -2</td>
+				</tr>
+				<tr>
+					<th>Dex</th>
+					<td>10 +0</td>
+					<td>10 +0</td>
+					<td>10 +0</td>
+					<td>10 +0</td>
+					<td>10 +0</td>
+					<td>10 +0</td>
+				</tr>
+				<tr>
+					<th>Save vs. Spell</th>
+					<td>+0</td>
+					<td>+4</td>
+					<td>+6</td>
+					<td>+8</td>
+					<td>+13</td>
+					<td>+16</td>
+				</tr>
+				<tr>
+					<th>Reflex</th>
+					<td>+2</td>
+					<td>+2</td>
+					<td>+2</td>
+					<td>+4</td>
+					<td>+4</td>
+					<td>+2</td>
+				</tr>
+				<tr>
+					<th>DR</th>
+					<td>0</td>
+					<td>8</td>
+					<td>8</td>
+					<td>11</td>
+					<td>15</td>
+					<td>14</td>
+				</tr>
+				<tr>
+					<th>Resists</th>
+					<td>75% All Elemental</td>
+					<td>50% All Elemental</td>
+					<td>50% All Elemental</td>
+					<td>50% All Elemental</td>
+					<td>50% All Elemental</td>
+					<td>-50% Fire, 50% all other elements</td>
+				</tr>
+				<tr>
+					<th>Abilites</th>
+					<td>Can burrow in the ground at a movement rate of 15.</td>
+					<td>Can burrow in the ground at normal movement speed. Tremor sense 20 ft.</td>
+					<td>Can assist a wizard in earth based magic (+1 Willpower). Once per day grant an earth blessing from the following list: Pass through stone 2/day, DR 4, heal 5d6 HP 1/day. The blessing lasts for one day.</td>
+					<td>Can burrow in the ground at normal movement speed. Tremor sense 30 ft.</td>
+					<td>Can burrow in the ground at normal movement speed. Tremor sense 50 ft.</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p class="half"><b>Water</b></p>
+	<div class="col-sm-12">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Water Sprite</th>
+					<th>Minor Water Elemental</th>
+					<th>Undine</th>
+					<th>Water Elemental</th>
+					<th>Greater Water Elemental</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>HP</th>
+					<td>4</td>
+					<td>45</td>
+					<td>50</td>
+					<td>70</td>
+					<td>105</td>
+				</tr>
+				<tr>
+					<th>Size</th>
+					<td>Small</td>
+					<td>Medium</td>
+					<td>Large</td>
+					<td>Large</td>
+					<td>Huge</td>
+				</tr>
+				<tr>
+					<th>Ticks</th>
+					<td>6</td>
+					<td>10</td>
+					<td>12</td>
+					<td>15</td>
+					<td>18</td>
+				</tr>
+				<tr>
+					<th>Movement</th>
+					<td>30 (60 Swim)</td>
+					<td>15 (90 swim)</td>
+					<td>30</td>
+					<td>30 (90 swim)</td>
+					<td>40 (120 Swim)</td>
+				</tr>
+				<tr>
+					<th>Dodge</th>
+					<td>+2</td>
+					<td>+8</td>
+					<td>+6</td>
+					<td>+11</td>
+					<td>+16</td>
+				</tr>
+				<tr>
+					<th>Attack</th>
+					<td>+0</td>
+					<td>+4</td>
+					<td>+2</td>
+					<td>+7</td>
+					<td>+11</td>
+				</tr>
+				<tr>
+					<th>Iniative</th>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>+2</td>
+					<td>+3</td>
+				</tr>
+				<tr>
+					<th>Damage</th>
+					<td>1d4 Blunt</td>
+					<td>1d8 + 3 Blunt</td>
+					<td>1d6 + 2 Blunt</td>
+					<td>1d10 + 6 Blunt</td>
+					<td>1d12 + 10 Blunt</td>
+				</tr>
+				<tr>
+					<th>Str</th>
+					<td>10 + 0</td>
+					<td>16 + 3</td>
+					<td>14 + 2</td>
+					<td>22 + 6</td>
+					<td>26 + 8</td>
+				</tr>
+				<tr>
+					<th>Int</th>
+					<td>12 +1</td>
+					<td>6 -2</td>
+					<td>14 +2</td>
+					<td>6 -2</td>
+					<td>6 -2</td>
+				</tr>
+				<tr>
+					<th>Dex</th>
+					<td>14 +2</td>
+					<td>20 +5</td>
+					<td>10 +0</td>
+					<td>22 +6</td>
+					<td>26 +8</td>
+				</tr>
+				<tr>
+					<th>Save vs. Spell</th>
+					<td>+0</td>
+					<td>+4</td>
+					<td>+6</td>
+					<td>+8</td>
+					<td>+13</td>
+				</tr>
+				<tr>
+					<th>Reflex</th>
+					<td>+2</td>
+					<td>+2</td>
+					<td>+4</td>
+					<td>+8</td>
+					<td>+12</td>
+				</tr>
+				<tr>
+					<th>DR</th>
+					<td>0</td>
+					<td>4</td>
+					<td>5</td>
+					<td>7</td>
+					<td>11</td>
+				</tr>
+				<tr>
+					<th>Resists</th>
+					<td>100% Cold</td>
+					<td>100% Cold</td>
+					<td>100% Cold</td>
+					<td>100% Cold</td>
+					<td>100% Cold</td>
+				</tr>
+				<tr>
+					<th>Abilites</th>
+					<td>Can create clean drinkable water at a rate of 1 gallon per round. Can breath under water. Has perfect maneuverability in water. It is amorphous. Water amplifies the sound this sprite can hear. For Instance, a water sprite in a river can hear sounds taking place the river many times further than a normal human could.</td>
+					<td> Bull Rush-The water elemental shoots itself forward like a water jet. If the elemental hits with the rush and succeeds in the oppsed str check the opponent is pushed 10 ft.</td>
+					<td>Can assist a wizard in water based magic (+1 Willpower). Once per day grant a water blessing from the following list: water breathing, water walking, freedom of movement, 100% cold resist. The blessing lasts for one day.</td>
+					<td>Bull Rush-The water elemental shoots itself forward like a water jet. If the elemental hits with the rush and succeeds in the oppsed str check the opponent is pushed 15 ft.</td>
+					<td>Bull Rush-The water elemental shoots itself forward like a water jet. If the elemental hits with the rush and succeeds in the oppsed str check the opponent is pushed 15 ft. for each size category smaller than the water elemental.<br/>Squeeze and Freeze-The elemntal makes an attack roll against a medium or smaller target. If the attack roll hits, the victim makes an opposed str check. On failure the victim is sucked into the water elemental. While trapped the victim takes 2d6 crushing and 2d6 cold damage each round. The victim may attempt an oppsed strength check or escape artist check to escape.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p class="half"><b>Air</b></p>
+	<div class="col-sm-12">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Wind Sprite</th>
+					<th></th>
+					<th>Slyph</th>
+					<th>Air Elemental</th>
+					<th>Greater Air Elemental</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>HP</th>
+					<td>4</td>
+					<td></td>
+					<td>40</td>
+					<td>60</td>
+					<td>80</td>
+				</tr>
+				<tr>
+					<th>Size</th>
+					<td>Small</td>
+					<td></td>
+					<td>Large</td>
+					<td>Large</td>
+					<td>Huge</td>
+				</tr>
+				<tr>
+					<th>Ticks</th>
+					<td>6</td>
+					<td></td>
+					<td>12</td>
+					<td>15</td>
+					<td>18</td>
+				</tr>
+				<tr>
+					<th>Movement</th>
+					<td>30 Flight</td>
+					<td></td>
+					<td>30 Flight</td>
+					<td>80 Flight</td>
+					<td>90 Flight</td>
+				</tr>
+				<tr>
+					<th>Dodge</th>
+					<td>+2</td>
+					<td></td>
+					<td>+6</td>
+					<td>+11</td>
+					<td>+16</td>
+				</tr>
+				<tr>
+					<th>Attack</th>
+					<td>+0</td>
+					<td></td>
+					<td>+2</td>
+					<td>+7</td>
+					<td>+10</td>
+				</tr>
+				<tr>
+					<th>Iniative</th>
+					<td>0</td>
+					<td></td>
+					<td>0</td>
+					<td>+4</td>
+					<td>+6</td>
+				</tr>
+				<tr>
+					<th>Damage</th>
+					<td>1d4 Blunt</td>
+					<td></td>
+					<td>1d6 + 2 Blunt</td>
+					<td>1d8 + 4 Blunt</td>
+					<td>1d10 + 8 Blunt</td>
+				</tr>
+				<tr>
+					<th>Str</th>
+					<td>10 +0</td>
+					<td></td>
+					<td>8 -1</td>
+					<td>18 +4</td>
+					<td>18 +4</td>
+				</tr>
+				<tr>
+					<th>Int</th>
+					<td>12 +1</td>
+					<td></td>
+					<td>14 +2</td>
+					<td>6 -2</td>
+					<td>6 -2</td>
+				</tr>
+				<tr>
+					<th>Dex</th>
+					<td>14 +2</td>
+					<td></td>
+					<td>16 +3</td>
+					<td>24 +7</td>
+					<td>30 +10</td>
+				</tr>
+				<tr>
+					<th>Save vs. Spell</th>
+					<td>+0</td>
+					<td></td>
+					<td>+6</td>
+					<td>+8</td>
+					<td>+13</td>
+				</tr>
+				<tr>
+					<th>Reflex</th>
+					<td>+2</td>
+					<td></td>
+					<td>+8</td>
+					<td>+8</td>
+					<td>+15</td>
+				</tr>
+				<tr>
+					<th>DR</th>
+					<td>0</td>
+					<td></td>
+					<td>3</td>
+					<td>6</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<th>Resists</th>
+					<td>75% Physical</td>
+					<td></td>
+					<td>100% Lightning</td>
+					<td>75% Physical</td>
+					<td>75% Physical</td>
+				</tr>
+				<tr>
+					<th>Abilites</th>
+					<td>Creat gusts of wind up to 30 mph. Can see twice as far as a human.</td>
+					<td></td>
+					<td>Can assist a wizard in air based magic (+1 Willpower). Once per day grant an air  blessing from the following list: 100% Lightning resistance, lighting bolt (straight line up to 50 ft., 6d6 lightning damage save 18 for half, 8 ticks), +10 movement. The blessing lasts for one day.</td>
+					<td>Can see twice as far as a human with good eyesight. Can form a wind wall 10'x10' in size. This air blocks normal sized missles such as arrows, crossbow bolts, small rocks, etc. The wall also knocks small creatures from the sky and disrupts flight of medium sized creatures. Air elementals can also produce buffeting gusts up to 40 mph.</td>
+					<td> Can see twice as far as a human with good eyesight. Can form a wind wall 20'x20' in size. This air blocks normal sized missles such as arrows, crossbow bolts, small rocks, etc. The wall also knocks medium creatures from the sky and disrupts flight of large sized creatures. Air elementals can also produce buffeting gusts up to 60 mph.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<h3 id="skills">Skills</h3>
+	<p> Skill ranks are broken down into 5 categories: Novice, Apprentice, Journeyman, Expert, Master. The average person can become a journeyman with enough practice but the exper and master ranks require a truly exceptional person. This translates mechanically to the first 3 ranks being purchased with the skill points gained each level (1 + int_mod). Expert and master rank must be purchased with character points. This reflects the amount of effort it requires to to become exceptionally skilled in something. A skill check is 1d10 + stat_bonus + rank. The cost and effect of the ranks are below under each skill description.</p>
+	<h5>Appraise(Int)</h5>
+	<p>Appraise is used judge the value of an item. The determined value is only the general value. Different market conditions can change the value greatly. Without an appropriate knowledge skill or recent expierience in said marketyou can only be so sure. To appraise an object you need access to throughly examine it and generally about a minute.<br/><i><u>Expert</u></i> (1): You can now appraise an object at distance by sight alone and you only need 30 seconds.<br/><i><u>Master</u></i> (1): It is now nearly impossible for a fake to fool you and you can appriase an object in 5 seconds.</p>
+	<h5>Balance(Dex)</h5>
+	<p>Balance is used for balancing in in extreme situation, i.e. walking a tight rope, an icy ledge, ect. Normally you move at quarter speed and cannot do much else but move without a penalty.<br/><i><u>Expert</u></i> (1): You can now move at normal speed while balanceing with no penalty.<br/><i><u>Master</u></i> (2): You can now perform most actions (including combat actions) while balancing at no penalty.</p>
+	<h5>Climb(Str)</h5>
+	<p>Climb is used anytime you climb something more difficult than a ladder. Under normal circumstances you need both hands and atleast one foot free to climb. You climb at a speed of 15 ft. for 3 ticks. You can still 5 ft. shift for 1 tick but not with &epsilon;<br/><i><u>Expert</u></i> (1): You now climb as well as run. You climb at your base movement for 3 ticks, shift for 1 tick with &epsilon;, and can move x4 your base movement for 6 ticks. <br/><i><u>Master</u></i> (2): Can climb with only one hand at no penalty.</p>
+	<h5>Disguise(Int)</h5>
+	<p>Disguise is used to hide your identity and appear to be someone else. This can be someone that just is not you or a specific person. A disguise takes anywhere from a few minutes to an hour to apply on how complex. Pretending to be a different gender is possible but will result in penalties. If you are impersonating someone in front of a close friend or relative they will get a bonus to spotting you as a fake.<br/><i><u>Expert</u></i> (1): You can apply a disguise much quicker. A simple disguise will only take seconds and even the most complex disguises a few minutes.<br/><i><u>Master</u></i> (2): You have mastered the ability of voice emulation. There is no longer a penalty for changing your gender. You are able to perfecly fake any voice you have previously heard. This lowers or negates the bonus close friends or relatives get when trying to spot you.</p>
+	<h5>Escape Artist(Dex)</h5>
+	<p>Escape artist is used to slip out of almost any binding or grapple.<br/><i><u>Expert</u></i> (1): You are faster. It cost one less tick to try and escape.<br/><i><u>Master</u></i> ():</p>
+	<h5>Heal(Int)</h5>
+	<p>Heal is used for for any medical treatment ranging from stiching a wound to long term care. Stopping someone from bleeding out on the battlefield takes 5 ticks and has a DC of 7<br/><i><u>Expert</u></i> (1): Can apply a poultice to an injured person that will heal them for 3d6. This can be done once per day per person.<br/><i><u>Master</u></i> (2): You can bind wounds in the blink of an eye. It only takes 1 tick to stabilize someone and you automatically pass the check.</p>
+	<h5>Hide(Dex)</h5>
+	<p>Hide is you ability to remain unseen. This includes stalking someone in the shadows to shadowing someone on the street. You move at half speed when hiding.<br/><i><u>Expert</u></i> (1): While not being directly observed you can use a crowd of 10 or more people to hide. <br/><i><u>Master</u></i> (2): You can move at full speed while hiding at no penalty.</p>
+	<h5>Jump(Str)</h5>
+	<p>Jump measures your ability to jump and some acrobatic moves. An untrained person's jump is 4 ft. long and 2 ft. high with a running start. Half the distance if standing still.<br/>Formula for trained jumper:<br/>Standing - 1d10 + jump rank + strength bonus distance. Half that much for height.<br/>Running - (1d10 + jump rank + strength bonus)*2 for distance. Height is same as standing. <br/><i><u>Expert</u></i> (1): You are a well trained athlete. You always max the d10 for the check.<br/><i><u>Master</u></i> (2): You never skipped leg day. You add your shift to the distance of your jumps and half that to your jump height.</p>
+	<h5>Knowledge (Various)(Int)</h5>
+	<p>Knowledge is a little different from the other skills. When you take knowledge you pick a topic. There are generally no expert or master ranks. Common knowledges are rituals. religion, nobility, ect. The knowledge skill is a way of saying your character has a particular interest in a subject and knows more than the average person.</p>
+	<h5>Listen)Int)</h5>
+	<p>Listen is used for anything that requires auditory detection. This can be hearing an assassin sneaking up behind you, or recognizing a voice through a stone wall.<br/><i><u>Expert</u></i> (1): You are able to clearly hear the difference in speech. For instance if 8 people are talking in a room, a normal person would just know there is a group but you can tell exactly how many people have spoken and can tell them apart as if you were looking at them.<br/><i><u>Master</u></i> (1): You abilitly borders on the supernatural. You can concentrate and tune out unwanted background noise and focus on one or a couple of sounds. For example in a noisy bar you could focus on one conversation across the bar and listen as if no one else was talking.</p>
+	<h5>Lock Picking(Dex)</h5>
+	<p>Lock picking is you ability to pick locks. You require a set of lock picks and each attempt takes 1 minute.<br/><i><u>Expert</u></i> (1): You are able to pick locks with improvised tools, like a thin bladed knife or a wire.<br/><i><u>Master</u></i> (1): As a master you are able to attempt to pick a lock with just one full round instead of a minute.</p>
+	<h5>Move Silently(Dex)</h5>
+	<p>Move silently is used to muffle any sound you make. This is everything from foot steps, to swoosh of your clothing, to your breathing. You move at half speed when attempting to move silently.<br/><i><u>Expert</u></i> (1): You can attempt to perform most action silently.<br/><i><u>Master</u></i> (2): You can move at full speed while moving silently.</p>
+	<h5>Perform)Int)</h5>
+	<p>Perform governs your ability to entertain. It does not just apply to a specific act or intrument. <br/><i><u>Expert</u></i> (1): You have mastered the art of drawing attention to yourself. Whether that is good or bad depends on your check. With a successful check you can make everyone pay attention to you.<br/><i><u>Master</u></i> (1): Your performances are truly something to behold. You can now effect the audience in a profound way by changing their emotional state(anxiety, sadness, happy, etc.). You make a perform check. This with an intelligence less than your perform check are automatically effect. Those with a higher intelligence must pass a int check against your perform to resist.</p>
+	<h5>Pick Pocket/Sleight of Hand(Dex)</h5>
+	<p>This skill encompasses everything from stealing something from someone's pocket, to palming small objects, to card tricks. It is generally opposed by spot.<br/><i><u>Expert</u></i> (1): You are able to perform a lift and a drop in the same motion at no penalty.<br/><i><u>Master</u></i> (2): You use this skill even while be closely observed at no penalty.</p>
+	<h5>Profession (various)(Int)</h5>
+	<p>Profession is similar to knowledge in that pick a profession and can have many. There is also generally no expert or master ranks. The real difference is knowledge is for a specific topic and profession is for a specific set of skills and related knowledge.</p>
+	<h5>Ride(Dex)</h5>
+	<p>Ride governs your ability to control a mount in stressful situations(combat, a storm, ect.). The average person can ride a horse a trot on roads and through open plains with no trouble.<br/><i><u>Expert</u></i> (1): You are able to mount/dismount as part of any of your move actions.<br/><i><u>Master</u></i> (2): You are able to pull a litte more speed out of your mount increasing its base movement speed.</p>
+	<h5>Spot(Int)</h5>
+	<p>Spot is your ability to see far distances, spot a person trying to hide, and your ability to search a room or area.<br/><i><u>Expert</u></i> (1): You no longer have a penalty for low light.<br/><i><u>Master</u></i> (1): You have a chance to spot invisibility.</p>
+	<h5>Swim(Str)</h5>
+	<p>Swim is your ability to swim in strenuous situations(combat, storm, etc.) Everyone can manage to doggy paddle around at half movement (only 3 tick movements)<br/><i><u>Expert</u></i> (1): You swim like you walk. You can swim at your full movement speed including 1 and 6 tick movements.<br/><i><u>Master</u></i> (2): You can perform most combat actions under water at no penalty.</p>
+	<h5>Wilderness Lore(Int)</h5>
+	<p>Wilderness Lore measures your ability as an outdoorsman. It is a combination of tracking, identifing plants and animals, and handling animals.<br/><i><u>Expert</u></i> (1): You are able to move at full speed while tracking.<br/><i><u>Master</u></i> (2): You can make a check to try and calm a hostile animal.</p>
+	<!-- <h5><b></b></h5>
+	<p><br/><i><u>Expert</u></i> ():<br/><i><u>Master</u></i> ():</p> -->
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+
