@@ -866,7 +866,7 @@ WillPower = Level + Intelligence Modifier + Purchliased Will Power + External Mo
 					</tr>
 				
 					<tr>
-						<td>The difficulty check to break out of one of your summing circles is 5 higher<br/>.</td>
+						<td>The difficulty check to break out of one of your summing circles is 4 higher<br/>.</td>
 					</tr>
 					<tr>
 						<td>+2 to the difficulty checks on your spells against demons (including binding spells)</td>
@@ -887,6 +887,9 @@ WillPower = Level + Intelligence Modifier + Purchliased Will Power + External Mo
 				<tbody>
 					<tr>
 						<td>+2 Willpower for Light Spells</td>
+					</tr>
+					<tr>
+						<td>All dice rolled for healing magic receive a +1 bonus.  For example a healing salve cast with 20 WP now restores 10d6+10.</td>
 					</tr>
 					<tr>
 						<td>+4 Willpower for summoning Named angels</td>
@@ -1089,6 +1092,15 @@ WillPower = Level + Intelligence Modifier + Purchliased Will Power + External Mo
 					<td>Instant</td>
 				</tr>
 				<tr>
+					<td>Quick Cast</td>
+					<td>5</td>
+					<td>5</td>
+					<td>1</td>
+					<td>None</td>
+					<td>This ability adds 1 &epsilon; to using a crafted ritual or activating a magic item.  The tick cost is still 5.</td>
+					<td>Instant</td>
+				</tr>
+				<tr>
 					<td>Quick Draw</td>
 					<td>3</td>
 					<td>1</td>
@@ -1254,6 +1266,7 @@ WillPower = Level + Intelligence Modifier + Purchliased Will Power + External Mo
 					<td>Instant</td>
 				</tr>
 				<tr>
+					<td>Sprited Charge</td>
 					<td>5</td>
 					<td>7</td>
 					<td>Mounted Combat</td>
@@ -1533,24 +1546,25 @@ WillPower = Level + Intelligence Modifier + Purchliased Will Power + External Mo
 	<h4 id="rank1">Rank 1</h4>
 		<p class="half"><b>General</b></p>
 			<p class="tab"><u>Alarm</u><br/>This spell takes 5 minutes to cast and doesn't require any components. It can be case upon a threshold, an object, or a radius up to your willpower ft. The alarm lasts for one hour per willpower. It can be silent or quite loud.</p>
-			<p class="tab"><u>Minor Containment/Summoning Circle (crafted)</u><br/>This can be drawn using various items. Ash, blood, ink, carved in stone, carved in wood, forged in steel, designed with holly leaves, etc. The material will change the effectiveness of the circle based on the type of the summon. To determine if the circle was made without error, make a willpower check at DC 20. While in the summoning circle, the magic resistance of the outerplanar beings is negated and, additionally, they receieve a +6 to their saves vs spell. Once summoned, a creature can try to break out once per day. They make a saving throw against DC 14. Each day they are in the circle, they get an additional +4 to break out.</p>
+			<p class="tab"><u>Cause Numbness</u><br/>This spell takes 5 minutes to cast and doesn't require any components.  This spell will cause either a person or a single limb/appendage to become completely numb.  The target may resist if he chooses and then receives a saving throw.</p>
+			<p class="tab"><u>Minor Containment/Summoning Circle (crafted)</u><br/>This can be drawn using various items. Ash, blood, ink, carved in stone, carved in wood, forged in steel, designed with holly leaves, etc. The material will change the effectiveness of the circle based on the type of the summon. To determine if the circle was made without error, make a willpower check at DC 10. While in the summoning circle, the magic resistance of the outerplanar beings is negated. Once summoned, a creature can try to break out once per day. They make a saving throw against the DC of the circle. Each day they are in the circle, they get an additional +4 to break out.</p>
 		<p class="half"><b>Light</b></p>
-			<p class="tab"><u>Conjure Glory Sprite</u><br/>This ritual requires a lit candle. This ritual conjures a small sprite formed of positive energy, about one foot tall. It will obey verbal commands. The maximum number of sprites a caster may have under his control is equal to his willpower/2. This ritual takes 10 minutes to finish.</p>
-			<p class="tab"><u>Minor Preserve Corpse</u><br/>This ritual requires a bell to ring over the corpse and a pinch of salt. The casting tims is 5 minutes. This ritual will preserve the corpse as it is for a number of days equal to the caster's current willpower. This spell does not preserve a corpse for use in undead creation.</p>
+			<p class="tab"><u>Conjure Glory Sprite</u><br/>This ritual conjures a small sprite formed of positive energy, about one foot tall. It will obey verbal commands. The maximum number of sprites a caster may have under his control is equal to his willpower/2. This ritual takes 10 minutes to finish.</p>
+			<p class="tab"><u>Minor Preserve Corpse</u><br/>The casting tims is 5 minutes. This ritual will preserve the corpse as it is for a number of days equal to the caster's current willpower. This spell does not preserve a corpse for use in undead creation.</p>
 		<p class="half"><b>Dark</b></p>
-			<p class="tab"><u>Conjure Shadow Sprite</u><br/>This ritual requires good quality ink. This ritual conjures a small sprite formed of negative energy, about one foot tall. It will obey verbal commands. The maximum number of sprites a caster can control is equal to his willpower/2. This ritual takes 10 minutes to finish.</p>
-			<p class="tab"><u>Create Skeleton</u><br/>Craft a skeleton out of atleast two human bones. The skeleton obeys simple verbal commands from it's creator, i.e. attack, wait, guard, follow. The ritual takes 10 minute to finish.</p>
+			<p class="tab"><u>Conjure Shadow Sprite</u><br/>This ritual conjures a small sprite formed of negative energy, about one foot tall. It will obey verbal commands. The maximum number of sprites a caster can control is equal to his willpower/2. This ritual takes 10 minutes to finish.</p>
+			<p class="tab"><u>Create Skeleton</u><br/>Craft a skeleton out of at least two human bones. The skeleton obeys simple verbal commands from it's creator, i.e. attack, wait, guard, follow. The ritual takes 10 minute to finish.</p>
 			<p class="tab"><u>Charm Person (crafted)</u><br/>This ritual may be cast upon any item. The ritual takes 10 minutes to cast. The item will be enchanted until discharged. When the item is touched by someone other than the caster, the must make a save vs. spell or be charmed by the original caster. The charmed person is very friendly to the caster, though by no means under the caster's control. The charm spell, if successful, lasts for wilpower/2 days. Any rude or untowards actions by the caster towards the charmed individual will grant the victim another save. Any outright attacks will break the charm spell.</p>
 		<p class="half"><b>Fire</b></p>
-			<p class="tab"><u>Conjure Fire Sprite</u><br/>This ritual requires a source of fire. It conjures a small sprite from the plane of fire, about one foot tall. It will obey verbal commands. The maximum number of sprites the caster may have under his control is equal to his willpower/2. The ritual takes 10 minutes to finish.</p>
+			<p class="tab"><u>Conjure Fire Sprite</u><br/>It conjures a small sprite from the plane of fire, about one foot tall. It will obey verbal commands. The maximum number of sprites the caster may have under his control is equal to his willpower/2. The ritual takes 10 minutes to finish.</p>
 		<p class="half"><b>Earth</b></p>
-			<p class="tab"><u>Conjure Earth Sprite</u><br/>This ritual requires a small living plant and good soil. It conjures a small sprite from the plane of earth, about one foot tall. It will obey verbal commands. The maximum number of sprites the caster may have under his control is equal to his willpower/2. The ritual takes 10 minutes to finish.</p>
-			<p class="tab"><u>Mend Object</u><br/>This ritual takes 10 minutes to cast and requires a needle and some thread. This will perfectly mend breaks in non enchanted items. It cannot repair mechanical failures, but can mend cracks and tears. Even shattered stone can be repaired. It cannont mend a broken steam engine, it can however mend a single piece of the engine.</p>
+			<p class="tab"><u>Conjure Earth Sprite</u><br/>It conjures a small sprite from the plane of earth, about one foot tall. It will obey verbal commands. The maximum number of sprites the caster may have under his control is equal to his willpower/2. The ritual takes 10 minutes to finish.</p>
+			<p class="tab"><u>Mend Object</u><br/>This will perfectly mend breaks in non enchanted items. It cannot repair mechanical failures, but can mend cracks and tears. Even shattered stone can be repaired. It cannont mend a broken steam engine, it can however mend a single piece of the engine.</p>
 		<p class="half"><b>Water</b></p>
 			<p class="tab"><u>Brew sleeping Draught (crafted)</u><br/>This ritual takes 30 minutes to cast. It requires a vial of clean, pure water and three drops of warm milk. Anyone who imbides the potion will need to make a save vs. spell or fall asleep. The victim may be woken normally if vigorously shaken or hit. Otherwise, they will remain asleep for 1 hour per willpower.</p>
-			<p class="tab"><u>Conjure Water Sprite</u><br/>This ritual requires clean, fresh water. It conjures a small sprite from the plane of water, about one foot tall. It will obey verbal commands. The maximum number of sprites the caster may have under his control is equal to his willpower/2. The ritual takes 10 minutes to finish.</p>
+			<p class="tab"><u>Conjure Water Sprite</u><br/>It conjures a small sprite from the plane of water, about one foot tall. It will obey verbal commands. The maximum number of sprites the caster may have under his control is equal to his willpower/2. The ritual takes 10 minutes to finish.</p>
 		<p class="half"><b>Air</b></p>
-			<p class="tab"><u>Conjure Air Sprite</u><br/>This ritual requires a feather from any bird. It conjures a sprite from the plane of air, about one foot tall. It will obey verbal commands. The maximum number of sprites the caster may have under his control is equal to his willpower/2. The ritual takes 10 minutes to finish.</p>
+			<p class="tab"><u>Conjure Air Sprite</u><br/>It conjures a sprite from the plane of air, about one foot tall. It will obey verbal commands. The maximum number of sprites the caster may have under his control is equal to his willpower/2. The ritual takes 10 minutes to finish.</p>
 	<h4 id="rank2">Rank 2</h4>
 		<p class="half"><b>General</b></p>
 			<p class="tab"><u>Minor Wall of Force (crafter)</u><br/>This spell is stored inside a piece of glass or diamond. When the wall is shattered so is the material component. When activated, this spell encloses the caster inside of a wall of arcane force. The wall has hit points of 15 + caster willpower. If diamond is used instead of glass, add 10 hp to the wall. The wall encircles the caster in a radius of 3 ft. and closes over his head ina bubble. The maximum duration of this spell once activiated is 1 minute per willpower.</p>
@@ -1558,7 +1572,7 @@ WillPower = Level + Intelligence Modifier + Purchliased Will Power + External Mo
 			This ritual takes only a minute to cast.  It allows the caster concentrate on an image and then project an illusion of this image for people to see.
 			</p>
 			<p class="tab"><u>See Binding</u><br/>
-			This ritual takes 5 minutes to cast.  It allows the caster to see the bindings laid down by voodoo as thin silver strings.  This ritual lasts for 1 minute/willpower.
+			This ritual takes 5 minutes to cast.  It allows the caster to see the bindings laid down by voodoo as thin silver strings.  This ritual lasts for 1 hour/willpower.
 </p>
 			<p class="tab"><u>Sleep Sand (crafted)</u><br/>
 			This spell allows the ritualist to enchant a palmful of sand (or salt, or dirt, or anything similar) with a binding of sleep.  The next person to touch this sand other than the caster will need to save vs spell or fall into a deep sleep.
@@ -1574,43 +1588,57 @@ WillPower = Level + Intelligence Modifier + Purchliased Will Power + External Mo
 		<p class="half"><b>Dark</b></p>
 			<p class="tab"><u>Create Zombie</u><br/>This ritual requires a limb from a human. It creates a human sized zombie from the limb. It will obey verbal commands. This ritual takes 15 minutes to finish.</p>
 			<p class="tab"><u>Dominate Outsider</u><br/>
-				This ritual takes 30 minutes to cast.  If an outsider fails it's saving throw against this ritual, it will be permanently dominated.  If the caster knows the true name of the outsider, the outsider will receive a -4 to its saving throw.				</p>
+				This ritual takes 30 minutes to cast.  If an outsider fails it's saving throw against this ritual, it will be permanently dominated.  If the caster knows the true name of the outsider, the outsider will receive a -4 to its saving throw.  This ritual may only be cast once each day against a particular outsider.				</p>
 			<p class="tab"><u>Negative Energy Bomb (crafted)</u><br/> This is a crafted ritual.  It creates a small black orb.  When crushed or broken, the orb expels a cloud of negative energy that deals willpower/2 d4 damage in a willpower/4 foot radius.  The caster is healed for 50% of the damage dealt.  
 			</p>
 		<p class="half"><b>Fire</b></p>
-			<p class="tab"><u>Fire Bomb (crafted)</u><br/> This is a crafted ritual.  It creates a small fiery red orb.  It's very hot to the touch.  When crushed or broken, the orb explodes into a willpower/2 radius fireball.  The fireball deals willpower/2 d10 fire damage.
+			<p class="tab"><u>Fire Bomb (crafted)</u><br/> This is a crafted ritual.  It creates a small fiery red orb.  It's very hot to the touch.  When crushed or broken, the orb explodes into a willpower/2 radius fireball.  The fireball deals willpower/2 d6 fire damage.
 			
 			</p>
 		<p class="half"><b>Earth</b></p>
-			<p class="tab"><u>Blessings of Gaia</u><br/></p>
-			<p class="tab"><u>Fertile Earth</u><br/></p>
-			<p class="tab"><u>Stone Spikes (crafted)</u><br/></p>
+			<p class="tab"><u>Blessings of Gaia</u><br/>
+				This ritual takes 15 minutes to cast.  The target of the ritual is cured of disease.
+			</p>
+
+			<p class="tab"><u>Fertile Earth</u><br/>
+				This ritual takes 10 minutes to cast.  It causes a plant to grow to full size.  If the plant is a tree, it will grow to it's maximum size as if it had grown for 10 years.
+			</p>
+			<p class="tab"><u>Stone Spikes (crafted)</u><br/>
+				This is a crafted ritual.  It creates a small brown and green marbles orb.  When crushed or broken on the ground, jagged one foot tall spikes shoot up from the ground in a willpower radius.  Anyone struck by the initial burst of spikes takes willpower/2 d2 physical damage.  There is no save for half on this spell however damage reduction does apply.  The spikes last for willpower/2 rounds.  Anyone attempting to move over them at full speed takes willpower/2 d2 physical damage as before.  Anyone attempting to move through at -10 movement has this damage reduced to just willpower/2.  Anyone can move through safely at movement -20 speed.
+			</p>
 		<p class="half"><b>Water</b></p>
-			<p class="tab"><u>Fog Bank (crafted)</u><br/>This ritual takes 10 minutes. It requires a glass bottle with a few drops of water. When smashed or uncorked a large fog bank rolls out obscuring vision down to 5 feet. The radius is willpower/2 feet.</p>
-			<p class="tab"><u>Snow Storm (crafted)</u><br/>This ritual takes 10 minutes to cast. It calls for a small glass ball or bottle half full of white flour. When smashed, a blast of extreme cold is unleashed in an area equal to the caster's willpower/4 ft. radius. This caught in this cold take willpower/2 d6 cold damage. Save vs. spell for half.</p>
+			<p class="tab"><u>Fog Bank (crafted)</u><br/>This ritual takes 10 minutes. It creates a small glass bottle with a few drops of water. When smashed or uncorked a large fog bank rolls out obscuring vision down to 5 feet. The radius is willpower/2 feet.</p>
+			<p class="tab"><u>Snow Storm (crafted)</u><br/>This ritual takes 10 minutes to cast. It creates a small white orb. When smashed, a blast of extreme cold is unleashed in an area equal to the caster's willpower/4 ft. radius. This caught in this cold take willpower/2 d6 cold damage. Save vs. spell for half.</p>
 		<p class="half"><b>Air</b></p>
-			<p class="tab"><u>Lightning Rod (crafted)</u><br/></p>
-			<p class="tab"><u>Privacy Circle</u><br/></p>
+			<p class="tab"><u>Lightning Rod (crafted)</u><br/>
+				This is a crafted ritual.  It creates a small wooden stick.  When broken it sends a bolt of lightning willpower*3 feet in a straight line.  Anyone struck by the lightning takes willpower/2 d6 lightning damage.
+			</p>
+			<p class="tab"><u>Privacy Circle</u><br/>
+				This ritual takes 10 minutes to cast.  When completed it creates a sound barrier of radius up to willpower/2 feet.  Sound cannot pass in or out of this circle.  The duration of this spell is 2*wpillpower minutes.
+			</p>
 	<h4 id="rank3">Rank 3</h4>
 		<p class="half"><b>General</b></p>
 			<p class="tab"><u>Circle of Invisibility</u><br/>This ritual takes 5 minutes to cast and lasts as long as the caster maintains concentration or until somone breaks the spell by taking an offensive action. The circle is immobile and extends out 2 feet per willpower.</p>
+			<p class="tab"><u>Dispel Magic</u><br/>This is a crafted ritual.  When used against any existing magic, you and the caster of the targetted magic both roll 1d20+willpower.  If you roll higher than them, their spell is dispelled.</p>
+			<p class="tab"><u>Shatter Binding</u><br/>This is a crafted ritual.  This spell behaves exactly as dispel magic; however, it only targets bindings created with the voodoo skill.</p>
 		<p class="half"><b>Light</b></p>
 		<p class="half"><b>Dark</b></p>
-			<p class="tab"><u>Conjure Imp</u><br/>This ritual requires a set of dice, a whole finger, and five gold coins. It summons an uncontrolled imp. An imp is about 1.5 feet tall and has bat wings. An imp will try and resist the summoning.<br/>Note: A summoned imp is NOT under control of the caster and must be bargained with or dominated. It will likely attack the summoner on sight if it can.</p>
+			<p class="tab"><u>Conjure Imp</u><br/>This ritual requires a set of dice, a whole finger, and five gold coins. It summons an uncontrolled imp. An imp is about 1.5 feet tall and has bat wings. An imp will try and resist the summoning.  The dice are not consumed in the casting.  The finger and the coins are.<br/>Note: A summoned imp is NOT under control of the caster and must be bargained with or dominated. It will likely attack the summoner on sight if it can.</p>
 			<p class="tab"><u>Create Ghast</u><br/>This ritual requires a limb from a human and 5 human teeth. It creates a human sized ghast. It will obey verbal commands. It takes 20 minutes to finish.</p>
 		<p class="half"><b>Fire</b></p>
-			<p class="tab"><u>Conjure Minor Fire Elemental</u><br/>This ritual requires a very large bonfire, with flames at least 10 feet high. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish. You can control up to 1 for every 5 willpower.</p>
+			<p class="tab"><u>Conjure Minor Fire Elemental</u><br/>The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish. You can control up to 1 for every 5 willpower.</p>
 			<p class="tab"><u>Rage of the Flames (crafted)</u><br/>When used it grants the user a willpower/7 bonus to strength and puts them in into a rage.</p>
 		<p class="half"><b>Earth</b></p>
-			<p class="tab"><u>Armor of Earth</u><br/>This ritual takes 10 minutes to cast and requires a small hammer and a piece of unforged iron. It grants the caster a bonus to DR equal to willpower/6 rounded down. The duration is willpower/2 hours.</p>
-			<p class="tab"><u>Conjure Minor Earth Elemental</u><br/>This ritual requires about 50 lbs. of fresh soil. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish. You can control up to 1 for every 5 willpower.</p>
+			<p class="tab"><u>Armor of Earth</u><br/>This ritual takes 10 minutes to cast. It grants the caster a bonus to DR equal to willpower/6 rounded down. The duration is willpower/2 hours.</p>
+			<p class="tab"><u>Conjure Minor Earth Elemental</u><br/>The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish. You can control up to 1 for every 5 willpower.</p>
 		<p class="half"><b>Water</b></p>
-			<p class="tab"><u>Conjure Minor Water Elemental</u><br/>This ritual requires about 50 gallons of fresh water. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish. You can control up to 1 for every 5 willpower.</p>
-			<p class="tab"><u>Mass Water Walking</u><br/>This ritual takes 10 minutes to cast and requires a bit of buoyant wood or a small amount of oil. It grants water walking to up to one person for every 2 willpower of the caster. The effect lasts for 1 minute per willpower of the caster.</p>
+			<p class="tab"><u>Conjure Minor Water Elemental</u><br/>The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish. You can control up to 1 for every 5 willpower.</p>
+			<p class="tab"><u>Mass Water Walking</u><br/>This ritual takes 10 minutes to cast. It grants water walking to up to one person for every 2 willpower of the caster. The effect lasts for 1 minute per willpower of the caster.</p>
 		<p class="half"><b>Air</b></p>
-			<p class="tab"><u>Run with the Wind</u><br/>This spell takes 10 minutes to cast and requires a small fan. It grants the caster 10 movement for every 10 willpower rounded down to nearest 10. The effect lasts for willpower/2 hours.</p>
+			<p class="tab"><u>Run with the Wind</u><br/>This spell takes 10 minutes to cast. It grants the caster 10 movement for every 10 willpower rounded down to nearest 10. The effect lasts for willpower/2 hours.</p>
 	<h4 id="rank4">Rank 4</h4>
 		<p class="half"><b>General</b></p>
+			<p class="tab"><u>Alter Appearance</u><br/> This ritual takes 15 minutes to cast and has a duration of 1 hour / willpower.  This spell will alter the appearnance of the caster.  The caster can grow/shrink up to 20% taller or shorter, he can change facial features, hair color, grow a beard, birth marks, etc.  He may not alter his gender with this spell or any physical stats.</p>
 			<p class="tab"><u>Binding Outsiders into Items</u><br/>
 			A non named angel/demon bound into an item has a draw equal to the rank of the summon.
 			The item has an internal mana equal to 5 times it’s rank.  This is refilled daily at midnight.
@@ -1632,55 +1660,59 @@ WillPower = Level + Intelligence Modifier + Purchliased Will Power + External Mo
 			NOTE: This ritual may be taken under non general elements; however, then the binding is specific to that element.
 			
 			</p>
-			<p class="tab"><u>Containment/Summon Circle</u><br/> This can be drawn using various items. Ash, blood, ink, carved in stone, carved in wood, forged in steel, designed with holly leaves, etc. The material will change the effectiveness of the circle based on the type of the summon. To determine if the circle was made without error, make a willpower check at DC 40. While in the summoning circle, the magic resistance of the outerplanar beings is negated and, additionally, the receieve a =6 to their saves vs spell. Once summoned, a creature can try to break out once per hour. They make a saving throw against DC 20. Each day they are in the circle, they get an additional +4 to break out.</p>
+			<p class="tab"><u>Containment Sphere</u><br/>This spell will entrap a dominated or willing outer planar being into a vessel of the casters chosing (i.e. a small bottle, a glass sphere, etc).  The creature is stuck in the vessel until it is either broken or released by the caster.  This is commonly used to conceal a wizard's entourage or to transport unsightly creatures through a crowded city.  This spell takes 15 minutes to cast.</p>
+			<p class="tab"><u>Containment/Summon Circle</u><br/> This can be drawn using various items. Ash, blood, ink, carved in stone, carved in wood, forged in steel, designed with holly leaves, etc. The material will change the effectiveness of the circle based on the type of the summon. To determine if the circle was made without error, make a willpower check at DC 28. While in the summoning circle, the magic resistance of the outerplanar beings is negated. Once summoned, a creature can try to break out once per day. They make a saving throw against the DC of the circle. Each day they are in the circle, they get an additional +4 to break out.</p>
+			<p class="tab"><u>Protection From Scrying</u><br/>This ritual creates 4 stones.  They can be moved as much as the caster likes and they will persist until they are dismissed, dispelled, or they are moved more than willpower feet apart. Anything inside the stones cannot be scried upon.</p>
+			<p class="tab"><u>Scry</u><br/>This ritual takes 10 minutes to cast.  If the target fails their saving throw, it shows a picture of the target as if being seen through a crystal ball.</p>
 			<p class="tab"><u>Wall of Force (crafted)</u><br/>The spell is stored inside a piece of glass or diamond. When the wall is shattered so is the material component. When activated, this spell encloses the caster inside a bubble of arcane force with a 3ft. radius. The wall has 20 + 1.5*willpower. If diamond is used instead of glass. add 20 HP to the wall. The maximum duration once activated is 5 minutes per willpower.</p>
 		<p class="half"><b>Light</b></p>
-			<p class="tab"><u>Conjure Angel</u><br/>This ritual requires a small scale with a gavel placed on one balance and a beggar's cup on the other. It conjures an Angel of rank N, where N is chose by the caster at the time of the summoning and has a max of the ritualist's Light rank and a minimum of 4. Angel are generally humanoid in appearance. The exact appearance and gender is up to the DM at the time of the summoning.<br/>Note: A summoned angel is NOT under the control of the summoner and must be bargained with or dominiated. If not properly contained in a summoning circle, it may attack the summoner on sight, try to dismiss itself, or try anything it chooses.</p>
+			<p class="tab"><u>Conjure Angel</u><br/>This ritual conjures an Angel of rank N, where N is chose by the caster at the time of the summoning and has a max of the ritualist's Light rank and a minimum of 4. Angel are generally humanoid in appearance. The exact appearance and gender is up to the DM at the time of the summoning. Unless the character has recently performed a notably good act, the angel will ignore the call of the summoner and not appear.<br/>Note: A summoned angel is NOT under the control of the summoner and must be bargained with or dominiated. If not properly contained in a summoning circle, it may attack the summoner on sight, try to dismiss itself, or try anything it chooses.</p>
 		<p class="half"><b>Dark</b></p>
-			<p class="tab"><u>Conjure Demon</u><br/>This ritual requires a small brazier with burning coals placed inside and blood poured on the coals during the final rites. it conjures a deamon of rank N, where N is chosen by the caster at the time of the summoning and has a maximum of the ritualist's Dark rank and a minimum of 4. Demons tend to vary wildly in appearance. The exact appearance and gender is up to the DM at the time of the summoning.<br/>Note: A summoned demon is NOT under control of the summoner and must be bargained with or dominated. If not properly contained in a summoning circle, a conjured Demon will almost certainly attack the summoner on sight.</p>
+			<p class="tab"><u>Conjure Demon</u><br/>This ritual conjures a deamon of rank N, where N is chosen by the caster at the time of the summoning and has a maximum of the ritualist's Dark rank and a minimum of 4. Demons tend to vary wildly in appearance. The exact appearance and gender is up to the DM at the time of the summoning.  The character must sacrifice a person as part of the summoning ritual.  Otherwise, the call is ignored and a demon will not appear.<br/>Note: A summoned demon is NOT under control of the summoner and must be bargained with or dominated. If not properly contained in a summoning circle, a conjured Demon will almost certainly attack the summoner on sight.</p>
 			<p class="tab"><u>Raise Ghost</u><br/>This ritual requires a human corpse no more than 3 days old. It raises a ghost from the corpse. It will obey verbal commands. The ritual takes 30 minutes to finish.</p>
 		<p class="half"><b>Fire</b></p>
-			<p class="tab"><u>Call Salamander</u><br/>This ritual requires a large fire or heat source such as a bonfire. It conjures a salamander from the plane of fire. You may have no more than willpower/10 rounded down conjured at anytime.<br/>A salamander is a creature of fire, typically taking on the appearance of a large red lizard. A salamander is a minor wizard in it's own right and can assists a wizard in further fire based magic. A salamander cannont leave the fire source in which it is conjured. The ritual takes 1 hour to finish.</p>
+			<p class="tab"><u>Call Salamander</u><br/>This ritual conjures a salamander from the plane of fire. You may have no more than willpower/10 rounded down conjured at anytime.<br/>A salamander is a creature of fire, typically taking on the appearance of a large red lizard. A salamander is a minor wizard in it's own right and can assists a wizard in further fire based magic. A salamander cannont leave the fire source in which it is conjured. The ritual takes 1 hour to finish.</p>
 		<p class="half"><b>Earth</b></p>
-			<p class="tab"><u>Call Gnome</u><br/>This ritual requires a source of fertile earth. It conjures a gnome from the plane of earth. You may only have willpower/10 conjured at any time.<br/>A gnome is a creature of earth typically taking the appearance of a short rotund man with a jolly face and ruddy complexion. A gnome is a minor wizard in it's own right and can assist a wizard in further earth based magic. A gnome cannot leave the area in which it is conjured. The ritual takes 1 hour to complete.</p>
+			<p class="tab"><u>Call Gnome</u><br/>This ritual conjures a gnome from the plane of earth. You may only have willpower/10 conjured at any time.<br/>A gnome is a creature of earth typically taking the appearance of a short rotund man with a jolly face and ruddy complexion. A gnome is a minor wizard in it's own right and can assist a wizard in further earth based magic. A gnome cannot leave the area in which it is conjured. The ritual takes 1 hour to complete.</p>
 		<p class="half"><b>Water</b></p>
-			<p class="tab"><u>Call Undine</u><br/>This ritual requires a running source of water such as a river or stream. It conjures an undine from the plane of water. You may have no more than willpower/10 rounded down conjured at anytime.<br/>An undine is a creature of water, typically taking on the appearance of a gilled woman. An undine is a minor wizard in it's own right and can assist a wizard in further water based magic. An undine cannot leave the water source in which it is conjured. This ritual takes 1 hour to complete.</p>
-			<p class="tab"><u>Ice Lance (crafted)</u><br/>This ritual taked 10 minutes and requires a needle. When released, a large spear of ice is launched. The spear is 5 ft. long and strikes for willpower/2 d6 physical damage.</p>
+			<p class="tab"><u>Call Undine</u><br/>This ritual conjures an undine from the plane of water. You may have no more than willpower/10 rounded down conjured at anytime.<br/>An undine is a creature of water, typically taking on the appearance of a gilled woman. An undine is a minor wizard in it's own right and can assist a wizard in further water based magic. An undine cannot leave the water source in which it is conjured. This ritual takes 1 hour to complete.</p>
+			<p class="tab"><u>Ice Lance (crafted)</u><br/>This ritual takes 10 minutes to craft. When released, a large spear of ice is launched. The spear is 5 ft. long and strikes for willpower/2 d6 physical damage.</p>
 		<p class="half"><b>Air</b></p>
-			<p class="tab"><u>Call Sylph</u><br/>This ritual requires open air and must be performed outside. This ritual conjures a slyph from the plane of air. You may have no more than willpower/10 conjured at any time.<br/>A sylph is a creature of air, typically taking on the appearance of an ethereal, young woman. A sylph is a minor wizard in it's own right and can assist a wizard in further air based magic. A slyph cannot leave the vicinity in which it is conjured. This ritual takes 1 hour to finish.</p>
+			<p class="tab"><u>Call Sylph</u><br/>This ritual conjures a slyph from the plane of air. You may have no more than willpower/10 conjured at any time.<br/>A sylph is a creature of air, typically taking on the appearance of an ethereal, young woman. A sylph is a minor wizard in it's own right and can assist a wizard in further air based magic. A slyph cannot leave the vicinity in which it is conjured. This ritual takes 1 hour to finish.</p>
 	<h4 id="rank5">Rank 5</h4>
 		<p class="half"><b>General</b></p>
-			<p class="tab"><u>Major Prison Circle</u><br/>This ritual enchants an area to trall all who enter. It takes 15 minutes to cast and lasts willpower/2 days/ It requires the area be outlined in some way )drawn in chalk, outlined in steel, ect.) If the outline is broken the spell is broken. It can not be broken from inside the circle. The material effects the save. Something like chalk would give the victim a +2 while something like steel would give them a -2. </p>
+			<p class="tab"><u>Entrapment</u><br/>This spell prepares a vessel of the caster's choosing to house an outer planr being.  Unlike a containment sphere spell, entrapment does not require the being to be dominated or willing.  They do however, receive a save.  This is used by rival wizards to steal powerful outer planar creatures from one another.</p>
+			<p class="tab"><u>Major Prison Circle</u><br/>This ritual enchants an area to trap all who enter. It takes 15 minutes to cast and lasts willpower/2 days. It requires the area be outlined in some way (drawn in chalk, outlined in steel, ect.) If the outline is broken the spell is broken. It can not be broken from inside the circle. The material effects the save. Something like chalk would give the victim a +2 while something like steel would give them a -2. </p>
 		<p class="half"><b>Light</b></p>
 		<p class="half"><b>Dark</b></p>
 			<p class="tab"><u>Create Shadow</u><br/>This ritual requires slaying a person during the ritual. This ritual raises a shadow from the released soul. It will obey verbal commands. The ritual takes 30 minutes to finish.</p>
 		<p class="half"><b>Fire</b></p>
-			<p class="tab"><u>Conjure Fire Elemental</u><br/>This ritual requires a fire source at least as large as a bonfire. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only control willpower/12 rounded down at anytime.</p>
+			<p class="tab"><u>Conjure Fire Elemental</u><br/> The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only control willpower/12 rounded down at anytime.</p>
 		<p class="half"><b>Earth</b></p>
-			<p class="tab"><u>Conjure Earth Elemental</u><br/>This ritual requires about 500 lbs. of earth and stone. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only control willpower/12 rounded down at anytime.</p>
+			<p class="tab"><u>Conjure Earth Elemental</u><br/>The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only control willpower/12 rounded down at anytime.</p>
 		<p class="half"><b>Water</b></p>
-			<p class="tab"><u>Conjure Water Elemental</u><br/>This ritual requires about 150 gallons of fresh water. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only control willpower/12 rounded down at anytime.</p>
+			<p class="tab"><u>Conjure Water Elemental</u><br/>The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only control willpower/12 rounded down at anytime.</p>
 		<p class="half"><b>Air</b></p>
-			<p class="tab"><u>Conjure Air Elemental</u><br/>This ritual requires a flute to play along with being outside in the open air. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only control willpower/12 rounded down at anytime.</p>
+			<p class="tab"><u>Conjure Air Elemental</u><br/>The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only control willpower/12 rounded down at anytime.</p>
 			<p class="tab"><u>Create Flying Carpet (grafted)</u><br/>This ritual takes 1 hour. It enchants a rug of up to willpower/2 ft. by willpower/2 ft. The enchantment lasts for up to willpower hours. This spell imbues the carpet with the ability to fly and carry up to 25 lbs. per willpower of the caster. The speed of the carpet is 3 times willpower. The carpet has 1hp per willpower of the caster.</p>
 	<h4 id="rank6">Rank 6</h4>
 		<p class="half"><b>General</b></p>
-			<p class="tab"><u>Gate</u><br/>This ritual takes 10 minutes to cast and requires inscribing runes in a cirle. It creates a gate with radius equal to willpower/2 feet and lasts for willpower minutes. The gate is a two way portal and the end points are the caster's currentl location and any place he is familiar with.</p>
 			<p class="tab"><u>Recall (crafted)</u><br/>This ritual take one hour to complete. It enchants and item with the ability to teleport the caster back to the a predesignated spot.</p>
 		<p class="half"><b>Light</b></p>
 		<p class="half"><b>Dark</b></p>
-			<p class="tab"><u>Create Wight</u><br/></p>
-			<p class="tab"><u>Steal Youth</u><br/>A very evil ritual. It requires 5 hours to cast and something precious to the victim. The ritual ages the victim by a number of years up tot he caster's willpower and lowers the age of the cast by the same number of years.</p>
+			<p class="tab"><u>Create Flesh Golem</u><br/>This ritual requires the skin from at least 3 people.  The time of death does not matter as long as there is enough skin.  If the bodies are particularly rotted or mangled, the player may use additional corpses to fill the gaps in. This ritual creates a flesh golem. It will obey verbal commands. The ritual takes 2 days to finish.  Like other golems, if the flesh golem moves more than 25*willpower feet from the spot of it's construction the magic will unravel and the flesh golem will be destroyed.</p>
+			<p class="tab"><u>Steal Youth</u><br/>It requires 5 hours to cast and something precious to the victim. The ritual ages the victim by a number of years up tot he caster's willpower and lowers the age of the cast by the same number of years.</p>
 			<p class="tab"><u>Unholy Syphon</u><br/>This ritual takes 1 hour to cast and requires a living human. The ritual drains the victims of all health and vitality leaving them withered and weak. The caster transfers this life force into another recipient in the form of 4 strength and 4 dexterity. This spell lasts as long as the victim is kept alive. As the victim is completely helpless, he would need to be fed/cared for if this is to last for any significant length of time.</p>
 		<p class="half"><b>Fire</b></p>
 			<p class="tab"><u>Flames of Truth</u><br/>This ritual requires a large fire source and a sacrifice of magic to the flames. It takes 10 minutes to complete. When the caster peers at someone through the fires, if the victim fails a save vs. spell, their mind is an open book to the caster. All memories and current thoughts may be rifled through at will for as long as the victim is watched through the fire.</p>
 		<p class="half"><b>Earth</b></p>
-			<p class="tab"><u>Stabilize Matter Matrix</u><br/>This ritual requires a small bar of platinum, weight approximatly 2 pounds. During the ritua, which takes 2 hours, the platinum is forged into the item. This allows the item to retain a higher enchantment than was previously possible If this is cast on a weapon, it allows it to hold an additional 2d6 elemental damage (either imbued via free magic or from binding an elemental). When cast on another item, it reduces the chance of multiple enchantments breaking the item by 1% per willpower of the caster.</p>
+			<p class="tab"><u>Stabilize Matter Matrix</u><br/>This ritual requires a small bar of platinum, weight approximatly 2 pounds. During the ritual, which takes 2 hours, the platinum is forged into the item. This allows the item to retain a higher enchantment than was previously possible If this is cast on a weapon, it allows it to hold an additional 2d6 elemental damage (either imbued via free magic or from binding an elemental). When cast on another item, it reduces the chance of multiple enchantments breaking the item by 1% per willpower of the caster.</p>
 		<p class="half"><b>Water</b></p>
 		<p class="half"><b>Air</b></p>
 	<h4 id="rank7">Rank 7</h4>
 		<p class="half"><b>General</b></p>
-			<p class="tab"><u>Greater Containment/Summoning Circle</u><br/> This can be drawn using various items. Ash, blood, ink, carved in stone, carved in wood, forged in steel, designed with holly leaves, etc. The material will change the effectiveness of the circle based on the type of the summon. To determine if the circle was made without error, make a willpower check at DC 54. While in the summoning circle, the magic resistance of the outerplanar beings is negated and, additionally, the receieve a -8 to their saves vs spell. Once summoned, a creature can try to break out once per hour. They make a saving throw against DC 30. Each day they are in the circle, they get an additional +4 to break out.</p>
+			<p class="tab"><u>Gate</u><br/>This ritual takes 10 minutes to cast and requires inscribing runes in a cirle. It creates a gate with radius equal to willpower/2 feet and lasts for willpower minutes. The gate is a two way portal and the end points are the caster's currentl location and any place he is familiar with.</p>
+			<p class="tab"><u>Greater Containment/Summoning Circle</u><br/> This can be drawn using various items. Ash, blood, ink, carved in stone, carved in wood, forged in steel, designed with holly leaves, etc. The material will change the effectiveness of the circle based on the type of the summon. To determine if the circle was made without error, make a willpower check at DC 58. While in the summoning circle, the magic resistance of the outerplanar beings is negated and, additionally, the receieve a -2 to their saves vs spell. Once summoned, a creature can try to break out once per day. They make a saving throw against the DC of the circle. Each day they are in the circle, they get an additional +4 to break out.</p>
 			<p class="tab"><u>Greater Wall of Force (crafted)</u><br/>The spell is stored inside a piece of glass or diamond. When the wall is shattered so is the material component. When activated, the caster is enclosed in a bubble of arcane force. The wall is impervious to normal physical damage and bust be destroyed through magic (i.e. dispelled, voided, etc.) or waited out. The maximum duration is 10 minutes per willpower.</p>
 		<p class="half"><b>Light</b></p>
 		<p class="half"><b>Dark</b></p>
@@ -1694,7 +1726,9 @@ WillPower = Level + Intelligence Modifier + Purchliased Will Power + External Mo
 			<p class="tab"><u> Conjure Greater Air Elemental</u><br/>This ritual requires a flute to play along with being outdoors in open air. The elemental obeys simple verbal commands from it's summoner, i.e. attack, wait, guard, follow. The ritual takes 1 hour to finish and you may only have willpower/15 contorlled at a time.</p>
 	<h4 id="rank8">Rank 8</h4>
 		<p class="half"><b>General</b></p>
-			<p class="tab"><u>Scry on Item</u><br/></p>
+			<p class="tab"><u>Scry on Item</u><br/>i
+				This ritual takes 10 minutes to complete.  If the item is being carried by a person, that person gets a saving throw against the effects.  Otherwise, there is no save for an item.  This spell gives the caster a picture of the location of the item as if he were looking through a crystal ball.
+			</p>
 		<p class="half"><b>Light</b></p>
 		<p class="half"><b>Dark</b></p>
 		<p class="half"><b>Fire</b></p>
@@ -1763,7 +1797,7 @@ g
 				</tr>
 				<tr>
 					<th>Damage</th>
-					<td>1d4 Fire</td>
+					<td>1d3 Fire</td>
 					<td>Per Weapon/Ability</td>
 				</tr>
 				<tr>
@@ -1794,7 +1828,7 @@ g
 				<tr>
 					<th>DR</th>
 					<td>0</td>
-					<td>2+Rank</td>
+					<td>Rank</td>
 				</tr>
 				<tr>
 					<th>Resists</th>
@@ -1865,7 +1899,7 @@ g
 				</tr>
 				<tr>
 					<th>Damage</th>
-					<td>1d4 Cold</td>
+					<td>1d3 Cold</td>
 					<td>1d6 +4 Claws</td>
 					<td>Per Weapon/ability</td>
 				</tr>
@@ -1902,8 +1936,8 @@ g
 				<tr>
 					<th>DR</th>
 					<td>0</td>
-					<td>3</td>
-					<td>2+Rank</td>
+					<td>2</td>
+					<td>Rank</td>
 				</tr>
 				<tr>
 					<th>Resists</th>
@@ -1931,7 +1965,7 @@ g
 					<th>Ghast</th>
 					<th>Ghost</th>
 					<th>Shadow</th>
-					<th>Wight</th>
+					<th>Flesh Golem</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -1939,10 +1973,10 @@ g
 					<th>HP</th>
 					<td>4</td>
 					<td>15</td>
-					<td>35</td>
-					<td>45</td>
-					<td>60</td>
-					<td></td>
+					<td>30</td>
+					<td>40</td>
+					<td>50</td>
+					<td>80</td>
 				</tr>
 				<tr>
 					<th>Size</th>
@@ -1951,7 +1985,7 @@ g
 					<td>Medium</td>
 					<td>Medium</td>
 					<td>Medium</td>
-					<td></td>
+					<td>Large</td>
 				</tr>
 				<tr>
 					<th>Ticks</th>
@@ -1960,7 +1994,7 @@ g
 					<td>10</td>
 					<td>10</td>
 					<td>12</td>
-					<td></td>
+					<td>15</td>
 				</tr>
 				<tr>
 					<th>Movement</th>
@@ -1969,7 +2003,7 @@ g
 					<td>40</td>
 					<td>30 Flight</td>
 					<td>40 Flight</td>
-					<td></td>
+					<td>30</td>
 				</tr>
 				<tr>
 					<th>Dodge</th>
@@ -1978,7 +2012,7 @@ g
 					<td>+4</td>
 					<td>+6</td>
 					<td>+8</td>
-					<td></td>
+					<td>+6</td>
 				</tr>
 				<tr>
 					<th>Attack</th>
@@ -1987,7 +2021,7 @@ g
 					<td>+4</td>
 					<td>+6</td>
 					<td>+8</td>
-					<td></td>
+					<td>+10</td>
 				</tr>
 				<tr>
 					<th>Iniative</th>
@@ -1996,16 +2030,16 @@ g
 					<td>0</td>
 					<td>+2</td>
 					<td>+3</td>
-					<td></td>
+					<td>0</td>
 				</tr>
 				<tr>
 					<th>Damage</th>
 					<td>1d6 + 1 Claw</td>
-					<td>1d8 + 2 Claw</td>
-					<td>1d8 + 5 Claw</td>
+					<td>1d8 + 1 Claw</td>
+					<td>1d8 + 3 Claw</td>
 					<td>2d6 Negative Energy</td>
 					<td>2d6 Negative Energy</td>
-					<td></td>
+					<td>1d8 + 5 Punch or 1d3+5 Bite</td>
 				</tr>
 				<tr>
 					<th>Str</th>
@@ -2014,7 +2048,7 @@ g
 					<td>20 +5</td>
 					<td>-</td>
 					<td>-</td>
-					<td></td>
+					<td>20 +5</td>
 				</tr>
 				<tr>
 					<th>Int</th>
@@ -2023,7 +2057,7 @@ g
 					<td>8 -1</td>
 					<td>10 +0</td>
 					<td>10 +0</td>
-					<td></td>
+					<td>8 -1</td>
 				</tr>
 				<tr>
 					<th>Dex</th>
@@ -2032,7 +2066,7 @@ g
 					<td>10 +0</td>
 					<td>10 +0</td>
 					<td>10 +0</td>
-					<td></td>
+					<td>10 +0</td>
 				</tr>
 				<tr>
 					<th>Save vs. Spell</th>
@@ -2040,8 +2074,8 @@ g
 					<td>+1</td>
 					<td>+4</td>
 					<td>+6</td>
-					<td></td>
-					<td></td>
+					<td>+7</td>
+					<td>+9</td>
 				</tr>
 				<tr>
 					<th>Reflex</th>
@@ -2049,35 +2083,35 @@ g
 					<td>+0</td>
 					<td>+0</td>
 					<td>+5</td>
-					<td></td>
-					<td></td>
+					<td>+7</td>
+					<td>+0</td>
 				</tr>
 				<tr>
 					<th>DR</th>
 					<td>0</td>
 					<td>4</td>
-					<td>5</td>
-					<td>4</td>
-					<td>7</td>
-					<td></td>
+					<td>3</td>
+					<td>1</td>
+					<td>2</td>
+					<td>6</td>
 				</tr>
 				<tr>
 					<th>Resists</th>
-					<td>100% Cold, 50% Fire, 75% Lightning, 50% Slash</td>
+					<td>100% Cold, 50% Fire, 75% Lightning, 50% Slash, 75% Pierce</td>
 					<td>100% Cold, 50% Lighting</td>
 					<td>100% Cold, 50% Lightning</td>
 					<td>100% Cold</td>
 					<td>100% Cold</td>
-					<td></td>
+					<td>75% Lightning, 50% Cold</td>
 				</tr>
 				<tr>
 					<th>Abilites</th>
 					<td></td>
 					<td></td>
-					<td>A ghast always exudes the noxious smell of death. Anyone withing 5 ft. of the ghast will suffer a -2 penalty to all rolls if they fail a save vs. spell at 16. Further, a ghast's claws can paralyze a victim. Anyone struck by the ghast must make a save vs. spell at 14 or be paralyzed for 1d4 rounds.</td>
+					<td>A ghast always exudes the noxious smell of death. Anyone withing 5 ft. of the ghast will suffer a -2 penalty to all rolls if they fail a save vs. spell at 16. Further, a ghast's claws can paralyze a victim. Anyone struck by the ghast must make a save vs. spell at 12 or be paralyzed for 1d4 rounds.</td>
 					<td>Any damage done by a ghost is added to it's life total to a max of 45. Physicals attacks against a ghost have a 50% miss chance as the ghost only exists partly in this plane of existence.</td>
-					<td>A shadow is immune to unenchanted weapons. Anyone hit by a shado must make a save vs. spell at DC 12 or be drained of 2 strength. This strength is drained until the victim is healed to full HP.</td>
-					<td></td>
+					<td>A shadow is immune to unenchanted weapons. Anyone hit by a shadow must make a save vs. spell at DC 12 or be drained of 2 strength. This strength is drained until the victim is healed to full HP.</td>
+					<td>A bite from a flesh golem causes the victim to make a save vs spell at DC 15.  Failure indicates the victim has contracted a disease.  This disease is at DM's discretion.</td>
 				</tr>
 			</tbody>
 		</table>
@@ -2099,16 +2133,16 @@ g
 				<tr>
 					<th>HP</th>
 					<td>4</td>
+					<td>35</td>
 					<td>40</td>
-					<td>50</td>
-					<td>55</td>
-					<td>85</td>
+					<td>45</td>
+					<td>75</td>
 				</tr>
 				<tr>
 					<th>Size</th>
 					<td>Small</td>
 					<td>Medium</td>
-					<td>Large</td>
+					<td>Medium</td>
 					<td>Large</td>
 					<td>Huge</td>
 				</tr>
@@ -2155,10 +2189,10 @@ g
 				<tr>
 					<th>Damage</th>
 					<td>1d6 Fire</td>
-					<td>3d6 Fire</td>
+					<td>2d6 Fire</td>
 					<td>1d6 + 2 Fire</td>
-					<td>4d6 Fire</td>
-					<td>6d6 Fire</td>
+					<td>3d6 Fire</td>
+					<td>5d6 Fire</td>
 				</tr>
 				<tr>
 					<th>Str</th>
@@ -2203,10 +2237,10 @@ g
 				<tr>
 					<th>DR</th>
 					<td>0</td>
+					<td>2</td>
+					<td>2</td>
 					<td>4</td>
 					<td>5</td>
-					<td>5</td>
-					<td>7</td>
 				</tr>
 				<tr>
 					<th>Resists</th>
@@ -2222,7 +2256,7 @@ g
 					<td>Shoot a 1d6 fire bolt, 8 ticks.</td>
 					<td>Limited control over the fire where it was conjured. Can assist a wizard in fire based magic (+1 Willpower). Once per day grant a fire blessing from the following list: Fire Immunity, fire breath(20 ft. radius and 20 ft. long cone with save 18 for half dealing 5d6 fire damage, +10 movement speed. The blessing lasts for one day.</td>
 					<td> Can fling blobs of liquid flame from its body. Upon striking, this fiery liquird deals 2d6 fire damage (save at 15 for half). If the victim fails the save, the liquid sticks tot he victim and they will continue to burn for 1d6 fire damage. It burns off after 1d3 rounds.</td>
-					<td>Can fling blobs of liquid flame from its body. Upon striking, this fiery liquird deals 2d6 fire damage (save at 15 for half). If the victim fails the save, the liquid sticks tot he victim and they will continue to burn for 1d6 fire damage. It burns off after 1d3 rounds.</td>
+					<td>Can fling blobs of liquid flame from its body. Upon striking, this fiery liquird deals 2d6 fire damage (save at 15 for half). If the victim fails the save, the liquid sticks tot he victim and they will continue to burn for 1d6 fire damage. It burns off after 1d4 rounds.</td>
 				</tr>
 			</tbody>
 		</table>
@@ -2245,17 +2279,17 @@ g
 				<tr>
 					<th>HP</th>
 					<td>4</td>
-					<td>55</td>
-					<td>70</td>
-					<td>85</td>
-					<td>125</td>
-					<td>130</td>
+					<td>45</td>
+					<td>45</td>
+					<td>65</td>
+					<td>100</td>
+					<td>110</td>
 				</tr>
 				<tr>
 					<th>Size</th>
 					<td>Small</td>
 					<td>Medium</td>
-					<td>Large</td>
+					<td>Medium</td>
 					<td>Large</td>
 					<td>Huge</td>
 					<td>Large or Huge</td>
@@ -2307,17 +2341,17 @@ g
 				</tr>
 				<tr>
 					<th>Damage</th>
-					<td>1d4 + 2 Blunt</td>
-					<td>1d8 + 5 Blunt</td>
+					<td>1d4 + 1 Blunt</td>
+					<td>1d8 + 3 Blunt</td>
 					<td>1d6 + 2 Blunt</td>
-					<td>1d12 + 8 Blunt</td>
+					<td>1d12 + 6 Blunt</td>
+					<td>3d6 + 9 Blunt</td>
 					<td>3d6 + 12 Blunt</td>
-					<td>3d6 + 15 Blunt</td>
 				</tr>
 				<tr>
 					<th>Str</th>
 					<td>14 +2</td>
-					<td>20 +5</td>
+					<td>16 +3</td>
 					<td>14 +2</td>
 					<td>22 +6</td>
 					<td>28 +9</td>
@@ -2362,15 +2396,15 @@ g
 				<tr>
 					<th>DR</th>
 					<td>0</td>
-					<td>8</td>
-					<td>8</td>
+					<td>5</td>
+					<td>2</td>
+					<td>7</td>
 					<td>11</td>
-					<td>15</td>
-					<td>14</td>
+					<td>10</td>
 				</tr>
 				<tr>
 					<th>Resists</th>
-					<td>75% All Elemental</td>
+					<td>50% All Elemental</td>
 					<td>50% All Elemental</td>
 					<td>50% All Elemental</td>
 					<td>50% All Elemental</td>
@@ -2406,16 +2440,16 @@ g
 				<tr>
 					<th>HP</th>
 					<td>4</td>
-					<td>45</td>
-					<td>50</td>
-					<td>70</td>
-					<td>105</td>
+					<td>40</td>
+					<td>40</td>
+					<td>60</td>
+					<td>85</td>
 				</tr>
 				<tr>
 					<th>Size</th>
 					<td>Small</td>
 					<td>Medium</td>
-					<td>Large</td>
+					<td>Medium</td>
 					<td>Large</td>
 					<td>Huge</td>
 				</tr>
@@ -2462,17 +2496,17 @@ g
 				<tr>
 					<th>Damage</th>
 					<td>1d4 Blunt</td>
-					<td>1d8 + 3 Blunt</td>
+					<td>1d8 + 2 Blunt</td>
 					<td>1d6 + 2 Blunt</td>
-					<td>1d10 + 6 Blunt</td>
-					<td>1d12 + 10 Blunt</td>
+					<td>1d10 + 4 Blunt</td>
+					<td>1d12 + 8 Blunt</td>
 				</tr>
 				<tr>
 					<th>Str</th>
 					<td>10 + 0</td>
-					<td>16 + 3</td>
 					<td>14 + 2</td>
-					<td>22 + 6</td>
+					<td>14 + 2</td>
+					<td>18 + 4</td>
 					<td>26 + 8</td>
 				</tr>
 				<tr>
@@ -2510,10 +2544,10 @@ g
 				<tr>
 					<th>DR</th>
 					<td>0</td>
+					<td>2</td>
+					<td>2</td>
 					<td>4</td>
-					<td>5</td>
 					<td>7</td>
-					<td>11</td>
 				</tr>
 				<tr>
 					<th>Resists</th>
@@ -2541,7 +2575,7 @@ g
 				<tr>
 					<th></th>
 					<th>Wind Sprite</th>
-					<th></th>
+					<th>Minor Air Elemental</th>
 					<th>Slyph</th>
 					<th>Air Elemental</th>
 					<th>Greater Air Elemental</th>
@@ -2551,23 +2585,23 @@ g
 				<tr>
 					<th>HP</th>
 					<td>4</td>
-					<td></td>
+					<td>30</td>
+					<td>35</td>
 					<td>40</td>
-					<td>60</td>
-					<td>80</td>
+					<td>70</td>
 				</tr>
 				<tr>
 					<th>Size</th>
 					<td>Small</td>
-					<td></td>
-					<td>Large</td>
+					<td>Medium</td>
+					<td>Medium</td>
 					<td>Large</td>
 					<td>Huge</td>
 				</tr>
 				<tr>
 					<th>Ticks</th>
 					<td>6</td>
-					<td></td>
+					<td>10</td>
 					<td>12</td>
 					<td>15</td>
 					<td>18</td>
@@ -2575,7 +2609,7 @@ g
 				<tr>
 					<th>Movement</th>
 					<td>30 Flight</td>
-					<td></td>
+					<td>50</td>
 					<td>30 Flight</td>
 					<td>80 Flight</td>
 					<td>90 Flight</td>
@@ -2583,7 +2617,7 @@ g
 				<tr>
 					<th>Dodge</th>
 					<td>+2</td>
-					<td></td>
+					<td>+7</td>
 					<td>+6</td>
 					<td>+11</td>
 					<td>+16</td>
@@ -2591,7 +2625,7 @@ g
 				<tr>
 					<th>Attack</th>
 					<td>+0</td>
-					<td></td>
+					<td>+4</td>
 					<td>+2</td>
 					<td>+7</td>
 					<td>+10</td>
@@ -2599,7 +2633,7 @@ g
 				<tr>
 					<th>Iniative</th>
 					<td>0</td>
-					<td></td>
+					<td>+2</td>
 					<td>0</td>
 					<td>+4</td>
 					<td>+6</td>
@@ -2607,23 +2641,23 @@ g
 				<tr>
 					<th>Damage</th>
 					<td>1d4 Blunt</td>
-					<td></td>
+					<td>1d6 + 3 Blunt</td>
 					<td>1d6 + 2 Blunt</td>
 					<td>1d8 + 4 Blunt</td>
-					<td>1d10 + 8 Blunt</td>
+					<td>1d10 + 6 Blunt</td>
 				</tr>
 				<tr>
 					<th>Str</th>
 					<td>10 +0</td>
-					<td></td>
+					<td>16 +3</td>
 					<td>8 -1</td>
 					<td>18 +4</td>
-					<td>18 +4</td>
+					<td>22 +6</td>
 				</tr>
 				<tr>
 					<th>Int</th>
 					<td>12 +1</td>
-					<td></td>
+					<td>6 -2</td>
 					<td>14 +2</td>
 					<td>6 -2</td>
 					<td>6 -2</td>
@@ -2631,7 +2665,7 @@ g
 				<tr>
 					<th>Dex</th>
 					<td>14 +2</td>
-					<td></td>
+					<td>20 +5</td>
 					<td>16 +3</td>
 					<td>24 +7</td>
 					<td>30 +10</td>
@@ -2639,7 +2673,7 @@ g
 				<tr>
 					<th>Save vs. Spell</th>
 					<td>+0</td>
-					<td></td>
+					<td>+4</td>
 					<td>+6</td>
 					<td>+8</td>
 					<td>+13</td>
@@ -2647,7 +2681,7 @@ g
 				<tr>
 					<th>Reflex</th>
 					<td>+2</td>
-					<td></td>
+					<td>+6</td>
 					<td>+8</td>
 					<td>+8</td>
 					<td>+15</td>
@@ -2655,15 +2689,15 @@ g
 				<tr>
 					<th>DR</th>
 					<td>0</td>
-					<td></td>
+					<td>1</td>
+					<td>2</td>
 					<td>3</td>
-					<td>6</td>
-					<td>10</td>
+					<td>4</td>
 				</tr>
 				<tr>
 					<th>Resists</th>
 					<td>75% Physical</td>
-					<td></td>
+					<td>75% Physical</td>
 					<td>100% Lightning</td>
 					<td>75% Physical</td>
 					<td>75% Physical</td>
@@ -2671,7 +2705,7 @@ g
 				<tr>
 					<th>Abilites</th>
 					<td>Creat gusts of wind up to 30 mph. Can see twice as far as a human.</td>
-					<td></td>
+					<td>Can see twice as far as a human with good eyesight.</td>
 					<td>Can assist a wizard in air based magic (+1 Willpower). Once per day grant an air  blessing from the following list: 100% Lightning resistance, lighting bolt (straight line up to 50 ft., 6d6 lightning damage save 18 for half, 8 ticks), +10 movement. The blessing lasts for one day.</td>
 					<td>Can see twice as far as a human with good eyesight. Can form a wind wall 10'x10' in size. This air blocks normal sized missles such as arrows, crossbow bolts, small rocks, etc. The wall also knocks small creatures from the sky and disrupts flight of medium sized creatures. Air elementals can also produce buffeting gusts up to 40 mph.</td>
 					<td> Can see twice as far as a human with good eyesight. Can form a wind wall 20'x20' in size. This air blocks normal sized missles such as arrows, crossbow bolts, small rocks, etc. The wall also knocks medium creatures from the sky and disrupts flight of large sized creatures. Air elementals can also produce buffeting gusts up to 60 mph.</td>
